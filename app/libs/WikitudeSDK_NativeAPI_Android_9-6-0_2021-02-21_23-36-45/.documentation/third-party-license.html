@@ -1,0 +1,3092 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikitude SDK Android Native API 9.6.0 Documentation </title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    
+    <link type="text/css" rel="stylesheet" href="css/merged.min.css">
+    
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/highlight-9.15.6.min.js"></script>
+    <script type="text/javascript" src="js/lunr.min-0.7.2.js"></script>
+    <script type="text/javascript" src="js/lightbox.min-0.5.1.js"></script>
+    <script type="text/javascript" src="js/jquery.easytree.js"></script>
+ 
+    <script type="text/plain" data-cookieconsent="statistics">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-11754809-8', 'auto');
+		ga('set', 'checkProtocolTask', null);
+		ga('send', 'pageview');
+    </script>   
+
+</head>
+<body>
+    <div id="page">
+        <a name="top" /></a>
+        <header>
+            <h1><a href="">Documentation</a></h1>
+        </header>
+        <nav id="page-tabs">
+            <div class="nav-link">
+                <a href="https://support.wikitude.com/support/home" class="">Forum</a>
+                <a href="https://support.wikitude.com/support/solutions" class="">FAQ</a>
+                <a href="https://www.wikitude.com/documentation" class="active">Documentation</a>
+                <a href="https://www.wikitude.com/download">Download</a>
+            </div>
+            <div class="nav-url">
+                <a href="https://www.wikitude.com/">www.wikitude.com</a>
+            </div>
+        </nav>
+         
+
+<div id="sidebar">
+
+    <div id="sidebarHeader">
+
+        
+        <select id="documentationSelect">
+            
+                <option value=""  > --- Android --- </option>
+            
+                <option value="android"  > Android Javascript API </option>
+            
+                <option value="androidnative"  selected > Android Native API </option>
+            
+                <option value=""  > --- iOS --- </option>
+            
+                <option value="ios"  > iOS Javascript API </option>
+            
+                <option value="iosnative"  > iOS Native API </option>
+            
+                <option value=""  > --- Windows --- </option>
+            
+                <option value="uwpnative"  > UWP Native API </option>
+            
+                <option value=""  > --- Unity --- </option>
+            
+                <option value="unity"  > Unity </option>
+            
+                <option value="hololens"  > HoloLens Unity </option>
+            
+                <option value=""  > --- Extensions --- </option>
+            
+                <option value="flutter"  > Flutter </option>
+            
+                <option value="phonegap"  > Cordova </option>
+            
+                <option value="xamarin"  > Xamarin </option>
+            
+                <option value=""  > --- Smart Glasses --- </option>
+            
+                <option value="epson"  > Epson </option>
+            
+                <option value="vuzix"  > Vuzix </option>
+            
+                <option value=""  > --- Services --- </option>
+            
+            
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio/" > Studio User Manual </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio-api/index.html" > Studio API </option>
+             
+            <option value="external:" > --- Expert Edition --- </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/expertedition/" > Expert Edition Unity </option>
+             
+        </select>
+
+        
+
+        <h2>Wikitude SDK Android Native API</h2>
+        <div>Professional Edition</div>
+        
+        <div id="version">version: 9.6.0</div>
+        
+        
+        <div id="api-type">Native API</div>
+        
+
+    </div>
+
+    <input id="showNav" class="toggleNav" type="checkbox">
+    <label class="showNavLbl" for="showNav">Show Navigation</label>
+    <label class="hideNavLbl" for="showNav">Hide Navigation</label>
+
+    <div id="mainnav">
+        <form action="search.html"><input id="search" type="text" placeholder="Search documentation" name="q" /></form>
+        <nav id="toc">
+            
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#getting-started">Getting started</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#introduction-to-the-wikitude-sdk">Introduction to the Wikitude SDK</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#recommended-usage-of-this-documentation">Recommended Usage of this Documentation</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#the-wikitude-native-sdk-augmented-reality-for-your-own-app">The Wikitude Native SDK - Augmented Reality for your own app</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#architecture-of-the-wikitude-sdk">Architecture of the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#the-wikitude-developer-portal">The Wikitude Developer Portal</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#feedback-and-contact">Feedback and Contact</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="requirementsandroidnative.html#requirements">Requirements</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="requirementsandroidnative.html#android-development">Android Development</a>
+            
+        </li>
+    
+        <li>
+            <a href="requirementsandroidnative.html#supported-android-devices">Supported Android Devices</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#project-setup">Project Setup</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="setupguideandroidnative.html#create-an-android-project">Create an Android project</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#adding-the-wikitude-sdk">Adding the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#add-permissions">Add permissions</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#trial-license-key-generation">Trial license key generation</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#wtc-file-generation">WTC file generation</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#license-key">License Key</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="triallicense.html#how-to-obtain-a-free-trial-license">How to obtain a free trial license</a>
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#where-should-i-enter-the-license-key">Where should I enter the license key</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="samplesnative.html#examples">Examples</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="samplesnative.html#wikitude-sdk-android-native-api-examples">Wikitude SDK Android Native API Examples</a>
+            
+        </li>
+    
+        <li>
+            <a href="samplesnative.html#setup">Setup</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#image-recognition">Image Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="imagerecognitionnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-recognition-range">Extended Recognition Range</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#simple-image-tracking-android">Simple Image Tracking Android</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#multiple-image-targets-tracking">Multiple Image Targets Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-image-tracking">Extended Image Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsimagerecognition.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-tracking">Instant Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#smart-seamless-ar-tracking">SMART - Seamless AR Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#basic-instant-tracking">Basic Instant Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-scene-picking">Instant Scene Picking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#persistent-instant-targets">Persistent Instant Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#save-instant-target">Save Instant Target</a>
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#load-instant-target">Load Instant Target</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#plane-detection-experimental">Plane Detection - Experimental</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#object-tracking">Object Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#introduction-to-object-and-scene-recognition">Introduction to Object and Scene Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#scene-recognition">Scene Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#simple-object-tracking">Simple Object Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#extended-object-tracking">Extended Object Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsobjectrecognition.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition">Cloud Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition-sample">Cloud Recognition Sample</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#on-click-cloud-recognition">On-Click Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#continuous-cloud-recognition">Continuous Cloud Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="renderingnative.html#rendering">Rendering</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="renderingnative.html#rendering-apis">Rendering APIs</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="renderingnative.html#external-rendering">External Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="renderingnative.html#internal-rendering">Internal Rendering</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#hardware-control">Hardware Control</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-settings">Camera Settings</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-position">Camera Position</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-focus-mode">Camera Focus Mode</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#manual-camera-focus">Manual Camera Focus</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera2-api-usage">Camera2 API usage</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-resolution">Camera Resolution</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-zoom">Camera Zoom</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#flashlight">Flashlight</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#focus-at-point-of-interest">Focus at point of interest</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#expose-at-point-of-interest">Expose at point of interest</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-controls">Camera Controls</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#plugins-api">Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapi.html#about-wikitude-sdk-plugins">About Wikitude SDK Plugins</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapi.html#plugin-base-class">Plugin Base Class</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#information-about-recognized-targets">Information about Recognized Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#platform-specifics">Platform Specifics</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#android-c-wikitude-plugin-library-build">Android C++ Wikitude Plugin Library Build</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#registering-plugins">Registering Plugins</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#barcode-and-qr-code-reader">Barcode and QR code reader</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#face-detection">Face Detection</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#input-plugins-api">Input Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="inputpluginsapi.html#about-wikitude-native-sdk-input-plugins">About Wikitude Native SDK Input Plugins</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#camera-frame-input-plugin-module-class">Camera Frame Input Plugin Module Class</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#camera-frame-input-plugin-module-implementation">Camera Frame Input Plugin Module Implementation</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#frame-metadata">Frame Metadata</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#frame-rendering">Frame Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#simple-input-plugin">Simple Input Plugin</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsplugins.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#target-management">Target Management</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets">Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#wikitude-studio">Wikitude Studio</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#use-projects-wtc-file-in-your-app">Use project's WTC file in your app</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets-for-cloud-recognition">Image Targets for Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#physical-height-for-image-targets">Physical Height for Image Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#object-targets">Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-based-conversion">Image-based conversion</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#best-practice-for-image-targets">Best practice for Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetguide.html#summary">Summary</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#optimal-image-dimensions">Optimal Image Dimensions</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#low-contrast-images">Low contrast images</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#distribution-of-textured-areas">Distribution of textured areas</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-whitespace">Images with whitespace</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#vector-based-graphics">Vector-based graphics</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-a-lot-of-text">Images with a lot of text</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#repetitive-patterns">Repetitive patterns</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#best-practice-for-object-targets">Best practice for Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttargetguide.html#characteristics-of-easily-trackable-objects">Characteristics of easily trackable objects</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#general-pieces-of-advice">General pieces of advice</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#image-based-conversion-best-practice">Image-based conversion - Best practice</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#targets-versioning">Targets Versioning</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetversioning.html#image-targets">Image Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#object-targets">Object Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="studio-api.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api-reference">Studio API Reference</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#api-reference">API Reference</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="reference.html#android-native-api-javadocs">Android Native API JavaDocs</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate">Migrate</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-to-93">Migrate to 9.3</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-891-to-810">Migrate from 8.9.1 to 8.10</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-832-to-84">Migrate from 8.3.2 to 8.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-80-to-81">Migrate from 8.0 to 8.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-72-to-80">Migrate from 7.2 to 8.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-71-to-72">Migrate from 7.1 to 7.2</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-70-to-71">Migrate from 7.0 to 7.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-21-to-70">Migrate from 2.1 to 7.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-201-to-21">Migrate from 2.0.1 to 2.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-14-to-20">Migrate from 1.4 to 2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-13-to-14">Migrate from 1.3 to 1.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-10-to-11">Migrate from 1.0 to 1.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#release-notes-wikitude-sdk-professional-edition">Release Notes Wikitude SDK Professional Edition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-960">Wikitude SDK 9.6.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-950">Wikitude SDK 9.5.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-940">Wikitude SDK 9.4.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-931">Wikitude SDK 9.3.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-93">Wikitude SDK 9.3</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-92">Wikitude SDK 9.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-910">Wikitude SDK 9.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-900">Wikitude SDK 9.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-8100">Wikitude SDK 8.10.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-891">Wikitude SDK 8.9.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-89">Wikitude SDK 8.9</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-87">Wikitude SDK 8.7</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-86">Wikitude SDK 8.6</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-85">Wikitude SDK 8.5</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-84">Wikitude SDK 8.4</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-832">Wikitude SDK 8.3.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-830">Wikitude SDK 8.3.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-820">Wikitude SDK 8.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-810">Wikitude SDK 8.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-800">Wikitude SDK 8.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-721">Wikitude SDK 7.2.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-720">Wikitude SDK 7.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-710">Wikitude SDK 7.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-700">Wikitude SDK 7.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-210">Wikitude SDK Native API 2.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-201">Wikitude SDK Native API 2.0.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-200">Wikitude SDK Native API 2.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-141">Wikitude SDK Native API 1.4.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-140">Wikitude SDK Native API 1.4.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-130">Wikitude SDK Native API 1.3.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-121">Wikitude SDK Native API 1.2.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-120">Wikitude SDK Native API 1.2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-110">Wikitude SDK Native API 1.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-100">Wikitude SDK Native API 1.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-100-beta">Wikitude SDK Native API 1.0.0 beta</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="license.html#license-terms">License Terms</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="license.html#terms-of-service-for-wikitudes-software-development-kit">Terms of Service for Wikitude's Software Development Kit</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="third-party-license.html#third-party-software-used">Third party software used</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+        </nav>
+        
+        <nav id="links">
+            <ul>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</div>
+        <div id="wrapper">
+            <div id="content">
+                <h2 id="third-party-software-used">Third party software used</h2>
+<p>Wikitude SDK may contain code from the following other projects:</p>
+<p><strong>Abseil C++</strong>
+Copyright (c) 2019 The Abseil Authors.  All rights reserved.
+License: Apache 2.0 <a href="https://github.com/abseil/abseil-cpp/blob/master/LICENSE">https://github.com/abseil/abseil-cpp/blob/master/LICENSE</a></p>
+<pre><code>                             Apache License
+                       Version 2.0, January 2004
+                    http://www.apache.org/licenses/
+</code></pre><p>   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
+<ol>
+<li><p>Definitions.</p>
+<p>&quot;License&quot; shall mean the terms and conditions for use, reproduction,
+and distribution as defined by Sections 1 through 9 of this document.</p>
+<p>&quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+the copyright owner that is granting the License.</p>
+<p>&quot;Legal Entity&quot; shall mean the union of the acting entity and all
+other entities that control, are controlled by, or are under common
+control with that entity. For the purposes of this definition,
+&quot;control&quot; means (i) the power, direct or indirect, to cause the
+direction or management of such entity, whether by contract or
+otherwise, or (ii) ownership of fifty percent (50%) or more of the
+outstanding shares, or (iii) beneficial ownership of such entity.</p>
+<p>&quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+exercising permissions granted by this License.</p>
+<p>&quot;Source&quot; form shall mean the preferred form for making modifications,
+including but not limited to software source code, documentation
+source, and configuration files.</p>
+<p>&quot;Object&quot; form shall mean any form resulting from mechanical
+transformation or translation of a Source form, including but
+not limited to compiled object code, generated documentation,
+and conversions to other media types.</p>
+<p>&quot;Work&quot; shall mean the work of authorship, whether in Source or
+Object form, made available under the License, as indicated by a
+copyright notice that is included in or attached to the work
+(an example is provided in the Appendix below).</p>
+<p>&quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+form, that is based on (or derived from) the Work and for which the
+editorial revisions, annotations, elaborations, or other modifications
+represent, as a whole, an original work of authorship. For the purposes
+of this License, Derivative Works shall not include works that remain
+separable from, or merely link (or bind by name) to the interfaces of,
+the Work and Derivative Works thereof.</p>
+<p>&quot;Contribution&quot; shall mean any work of authorship, including
+the original version of the Work and any modifications or additions
+to that Work or Derivative Works thereof, that is intentionally
+submitted to Licensor for inclusion in the Work by the copyright owner
+or by an individual or Legal Entity authorized to submit on behalf of
+the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+means any form of electronic, verbal, or written communication sent
+to the Licensor or its representatives, including but not limited to
+communication on electronic mailing lists, source code control systems,
+and issue tracking systems that are managed by, or on behalf of, the
+Licensor for the purpose of discussing and improving the Work, but
+excluding communication that is conspicuously marked or otherwise
+designated in writing by the copyright owner as &quot;Not a Contribution.&quot;</p>
+<p>&quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+on behalf of whom a Contribution has been received by Licensor and
+subsequently incorporated within the Work.</p>
+</li>
+<li><p>Grant of Copyright License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the
+Work and such Derivative Works in Source or Object form.</p>
+</li>
+<li><p>Grant of Patent License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+(except as stated in this section) patent license to make, have made,
+use, offer to sell, sell, import, and otherwise transfer the Work,
+where such license applies only to those patent claims licensable
+by such Contributor that are necessarily infringed by their
+Contribution(s) alone or by combination of their Contribution(s)
+with the Work to which such Contribution(s) was submitted. If You
+institute patent litigation against any entity (including a
+cross-claim or counterclaim in a lawsuit) alleging that the Work
+or a Contribution incorporated within the Work constitutes direct
+or contributory patent infringement, then any patent licenses
+granted to You under this License for that Work shall terminate
+as of the date such litigation is filed.</p>
+</li>
+<li><p>Redistribution. You may reproduce and distribute copies of the
+Work or Derivative Works thereof in any medium, with or without
+modifications, and in Source or Object form, provided that You
+meet the following conditions:</p>
+<p>(a) You must give any other recipients of the Work or</p>
+<pre><code>Derivative Works a copy of this License; and
+</code></pre><p>(b) You must cause any modified files to carry prominent notices</p>
+<pre><code>stating that You changed the files; and
+</code></pre><p>(c) You must retain, in the Source form of any Derivative Works</p>
+<pre><code>that You distribute, all copyright, patent, trademark, and
+attribution notices from the Source form of the Work,
+excluding those notices that do not pertain to any part of
+the Derivative Works; and
+</code></pre><p>(d) If the Work includes a &quot;NOTICE&quot; text file as part of its</p>
+<pre><code>distribution, then any Derivative Works that You distribute must
+include a readable copy of the attribution notices contained
+within such NOTICE file, excluding those notices that do not
+pertain to any part of the Derivative Works, in at least one
+of the following places: within a NOTICE text file distributed
+as part of the Derivative Works; within the Source form or
+documentation, if provided along with the Derivative Works; or,
+within a display generated by the Derivative Works, if and
+wherever such third-party notices normally appear. The contents
+of the NOTICE file are for informational purposes only and
+do not modify the License. You may add Your own attribution
+notices within Derivative Works that You distribute, alongside
+or as an addendum to the NOTICE text from the Work, provided
+that such additional attribution notices cannot be construed
+as modifying the License.
+</code></pre><p>You may add Your own copyright statement to Your modifications and
+may provide additional or different license terms and conditions
+for use, reproduction, or distribution of Your modifications, or
+for any such Derivative Works as a whole, provided Your use,
+reproduction, and distribution of the Work otherwise complies with
+the conditions stated in this License.</p>
+</li>
+<li><p>Submission of Contributions. Unless You explicitly state otherwise,
+any Contribution intentionally submitted for inclusion in the Work
+by You to the Licensor shall be under the terms and conditions of
+this License, without any additional terms or conditions.
+Notwithstanding the above, nothing herein shall supersede or modify
+the terms of any separate license agreement you may have executed
+with Licensor regarding such Contributions.</p>
+</li>
+<li><p>Trademarks. This License does not grant permission to use the trade
+names, trademarks, service marks, or product names of the Licensor,
+except as required for reasonable and customary use in describing the
+origin of the Work and reproducing the content of the NOTICE file.</p>
+</li>
+<li><p>Disclaimer of Warranty. Unless required by applicable law or
+agreed to in writing, Licensor provides the Work (and each
+Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied, including, without limitation, any warranties or conditions
+of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+PARTICULAR PURPOSE. You are solely responsible for determining the
+appropriateness of using or redistributing the Work and assume any
+risks associated with Your exercise of permissions under this License.</p>
+</li>
+<li><p>Limitation of Liability. In no event and under no legal theory,
+whether in tort (including negligence), contract, or otherwise,
+unless required by applicable law (such as deliberate and grossly
+negligent acts) or agreed to in writing, shall any Contributor be
+liable to You for damages, including any direct, indirect, special,
+incidental, or consequential damages of any character arising as a
+result of this License or out of the use or inability to use the
+Work (including but not limited to damages for loss of goodwill,
+work stoppage, computer failure or malfunction, or any and all
+other commercial damages or losses), even if such Contributor
+has been advised of the possibility of such damages.</p>
+</li>
+<li><p>Accepting Warranty or Additional Liability. While redistributing
+the Work or Derivative Works thereof, You may choose to offer,
+and charge a fee for, acceptance of support, warranty, indemnity,
+or other liability obligations and/or rights consistent with this
+License. However, in accepting such obligations, You may act only
+on Your own behalf and on Your sole responsibility, not on behalf
+of any other Contributor, and only if You agree to indemnify,
+defend, and hold each Contributor harmless for any liability
+incurred by, or claims asserted against, such Contributor by reason
+of your accepting any such warranty or additional liability.</p>
+</li>
+</ol>
+<p><strong>AGASTPP</strong>
+Copyright © 2010, Elmar Mair All rights reserved.
+<a href="http://sourceforge.net/projects/agastpp/">http://sourceforge.net/projects/agastpp/</a></p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ul>
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+<li>Neither the name of the <ORGANIZATION> nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+</ul>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<p><strong>AR Core</strong>
+Copyright © 2018 Google Inc. All rights reserved.
+License: Apache 2.0 <a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a></p>
+<p><strong>BRISK</strong>
+ Copyright (C) 2011  The Autonomous Systems Lab, ETH Zurich,
+ Stefan Leutenegger, Simon Lynen and Margarita Chli.</p>
+<p> Copyright (C) 2013  The Autonomous Systems Lab, ETH Zurich,
+ Stefan Leutenegger and Simon Lynen.</p>
+<p> All rights reserved.</p>
+<p> This is the Author&#39;s implementation of BRISK: Binary Robust Invariant 
+ Scalable Keypoints [1]. Various (partly unpublished) extensions are provided, 
+ some of which are described in [2].</p>
+<p> [1] Stefan Leutenegger, Margarita Chli and Roland Siegwart. BRISK: Binary 
+     Robust Invariant Scalable Keypoints. In Proceedings of the IEEE 
+     International Conference on Computer Vision (ICCV), 2011.</p>
+<p> [2] Stefan Leutenegger. Unmanned Solar Airplanes: Design and Algorithms for 
+     Efficient and Robust Autonomous Operation. Doctoral dissertation, 2014.</p>
+<p> This file is part of BRISK.</p>
+<p> Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:</p>
+<ul>
+<li>Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.</li>
+<li><p>Neither the name of the Autonomous Systems Lab, ETH Zurich nor the
+names of its contributors may be used to endorse or promote products
+derived from this software without specific prior written permission.</p>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</li>
+</ul>
+<p><strong>Ceres Solver</strong>
+Copyright 2016 Google Inc. All rights reserved.
+License: BSD <a href="http://ceres-solver.org/license.html">http://ceres-solver.org/license.html</a></p>
+<p><strong>CLAPACK</strong>
+<a href="http://www.netlib.org/clapack">http://www.netlib.org/clapack</a></p>
+<pre><code>@BOOK{laug,
+      AUTHOR = {Anderson, E. and Bai, Z. and Bischof, C. and
+                Blackford, S. and Demmel, J. and Dongarra, J. and
+                Du Croz, J. and Greenbaum, A. and Hammarling, S. and
+                McKenney, A. and Sorensen, D.},
+      TITLE = {{LAPACK} Users&#39; Guide},
+      EDITION = {Third},
+      PUBLISHER = {Society for Industrial and Applied Mathematics},
+      YEAR = {1999},
+      ADDRESS = {Philadelphia, PA},
+      ISBN = {0-89871-447-8 (paperback)} } 
+</code></pre><p><strong>Cocoa Lumberjack</strong>
+Copyright (c) 2010-2018, Deusty, LLC,
+License: BSD 3-Clause License <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/LICENSE">https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/LICENSE</a></p>
+<p><strong>Curl</strong>
+Copyright (c) 1996 - 2018, Daniel Stenberg, <a href="mailto:&#x64;&#x61;&#110;&#x69;&#x65;&#x6c;&#x40;&#104;&#x61;&#x78;&#120;&#46;&#115;&#101;">&#x64;&#x61;&#110;&#x69;&#x65;&#x6c;&#x40;&#104;&#x61;&#x78;&#120;&#46;&#115;&#101;</a>. 
+License: MIT/X Derivate <a href="http://curl.haxx.se/docs/copyright.html">http://curl.haxx.se/docs/copyright.html</a></p>
+<p><strong>dirent</strong>
+Copyright (c) 2015 Toni Rönkkö 
+License: MIT License <a href="https://github.com/tronkko/dirent/blob/master/LICENSE">https://github.com/tronkko/dirent/blob/master/LICENSE</a></p>
+<p><strong>Eigen3</strong>
+Source code available under: <a href="https://bitbucket.org/eigen/eigen/src/default/">https://bitbucket.org/eigen/eigen/src/default/</a>
+Eigen is subject to the terms of the Mozilla Public License, v. 2.0 <a href="https://www.mozilla.org/en-US/MPL/2.0/">https://www.mozilla.org/en-US/MPL/2.0/</a></p>
+<p><strong>EPnP</strong>
+Copyright (c) 2009, V. Lepetit, EPFL
+All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: </p>
+<ol>
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. </li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. </li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<p>The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the FreeBSD Project.</p>
+<p><strong>farmhash</strong>
+Copyright (c) 2014 Google, Inc.</p>
+<p>License: <a href="https://github.com/google/farmhash/blob/master/COPYING">https://github.com/mariusmuja/flann/blob/master/COPYING</a></p>
+<p>// Copyright (c) 2014 Google, Inc.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the &quot;Software&quot;), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.</p>
+<p><strong>FLANN</strong>
+Copyright (c) 2008-2011  Marius Muja <a href="mailto:&#109;&#97;&#x72;&#105;&#117;&#x73;&#x6d;&#x40;&#99;&#x73;&#46;&#x75;&#x62;&#99;&#x2e;&#x63;&#x61;">&#109;&#97;&#x72;&#105;&#117;&#x73;&#x6d;&#x40;&#99;&#x73;&#46;&#x75;&#x62;&#99;&#x2e;&#x63;&#x61;</a>. All rights reserved.
+Copyright (c) 2008-2011  David G. Lowe <a href="mailto:&#108;&#111;&#119;&#101;&#x40;&#99;&#x73;&#46;&#x75;&#x62;&#99;&#x2e;&#x63;&#x61;">&#108;&#111;&#119;&#101;&#x40;&#99;&#x73;&#46;&#x75;&#x62;&#99;&#x2e;&#x63;&#x61;</a>. All rights reserved.</p>
+<p>License: BSD <a href="https://github.com/mariusmuja/flann/blob/master/COPYING">https://github.com/mariusmuja/flann/blob/master/COPYING</a></p>
+<p><strong>FlatBuffers</strong>
+Copyright (c) 2019 Google.  All rights reserved.
+License: Apache 2.0 <a href="https://github.com/google/flatbuffers/blob/master/LICENSE.txt">https://github.com/google/flatbuffers/blob/master/LICENSE.txt</a></p>
+<pre><code>                             Apache License
+                       Version 2.0, January 2004
+                    http://www.apache.org/licenses/
+</code></pre><p>   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
+<ol>
+<li><p>Definitions.</p>
+<p>&quot;License&quot; shall mean the terms and conditions for use, reproduction,
+and distribution as defined by Sections 1 through 9 of this document.</p>
+<p>&quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+the copyright owner that is granting the License.</p>
+<p>&quot;Legal Entity&quot; shall mean the union of the acting entity and all
+other entities that control, are controlled by, or are under common
+control with that entity. For the purposes of this definition,
+&quot;control&quot; means (i) the power, direct or indirect, to cause the
+direction or management of such entity, whether by contract or
+otherwise, or (ii) ownership of fifty percent (50%) or more of the
+outstanding shares, or (iii) beneficial ownership of such entity.</p>
+<p>&quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+exercising permissions granted by this License.</p>
+<p>&quot;Source&quot; form shall mean the preferred form for making modifications,
+including but not limited to software source code, documentation
+source, and configuration files.</p>
+<p>&quot;Object&quot; form shall mean any form resulting from mechanical
+transformation or translation of a Source form, including but
+not limited to compiled object code, generated documentation,
+and conversions to other media types.</p>
+<p>&quot;Work&quot; shall mean the work of authorship, whether in Source or
+Object form, made available under the License, as indicated by a
+copyright notice that is included in or attached to the work
+(an example is provided in the Appendix below).</p>
+<p>&quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+form, that is based on (or derived from) the Work and for which the
+editorial revisions, annotations, elaborations, or other modifications
+represent, as a whole, an original work of authorship. For the purposes
+of this License, Derivative Works shall not include works that remain
+separable from, or merely link (or bind by name) to the interfaces of,
+the Work and Derivative Works thereof.</p>
+<p>&quot;Contribution&quot; shall mean any work of authorship, including
+the original version of the Work and any modifications or additions
+to that Work or Derivative Works thereof, that is intentionally
+submitted to Licensor for inclusion in the Work by the copyright owner
+or by an individual or Legal Entity authorized to submit on behalf of
+the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+means any form of electronic, verbal, or written communication sent
+to the Licensor or its representatives, including but not limited to
+communication on electronic mailing lists, source code control systems,
+and issue tracking systems that are managed by, or on behalf of, the
+Licensor for the purpose of discussing and improving the Work, but
+excluding communication that is conspicuously marked or otherwise
+designated in writing by the copyright owner as &quot;Not a Contribution.&quot;</p>
+<p>&quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+on behalf of whom a Contribution has been received by Licensor and
+subsequently incorporated within the Work.</p>
+</li>
+<li><p>Grant of Copyright License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the
+Work and such Derivative Works in Source or Object form.</p>
+</li>
+<li><p>Grant of Patent License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+(except as stated in this section) patent license to make, have made,
+use, offer to sell, sell, import, and otherwise transfer the Work,
+where such license applies only to those patent claims licensable
+by such Contributor that are necessarily infringed by their
+Contribution(s) alone or by combination of their Contribution(s)
+with the Work to which such Contribution(s) was submitted. If You
+institute patent litigation against any entity (including a
+cross-claim or counterclaim in a lawsuit) alleging that the Work
+or a Contribution incorporated within the Work constitutes direct
+or contributory patent infringement, then any patent licenses
+granted to You under this License for that Work shall terminate
+as of the date such litigation is filed.</p>
+</li>
+<li><p>Redistribution. You may reproduce and distribute copies of the
+Work or Derivative Works thereof in any medium, with or without
+modifications, and in Source or Object form, provided that You
+meet the following conditions:</p>
+<p>(a) You must give any other recipients of the Work or</p>
+<pre><code>Derivative Works a copy of this License; and
+</code></pre><p>(b) You must cause any modified files to carry prominent notices</p>
+<pre><code>stating that You changed the files; and
+</code></pre><p>(c) You must retain, in the Source form of any Derivative Works</p>
+<pre><code>that You distribute, all copyright, patent, trademark, and
+attribution notices from the Source form of the Work,
+excluding those notices that do not pertain to any part of
+the Derivative Works; and
+</code></pre><p>(d) If the Work includes a &quot;NOTICE&quot; text file as part of its</p>
+<pre><code>distribution, then any Derivative Works that You distribute must
+include a readable copy of the attribution notices contained
+within such NOTICE file, excluding those notices that do not
+pertain to any part of the Derivative Works, in at least one
+of the following places: within a NOTICE text file distributed
+as part of the Derivative Works; within the Source form or
+documentation, if provided along with the Derivative Works; or,
+within a display generated by the Derivative Works, if and
+wherever such third-party notices normally appear. The contents
+of the NOTICE file are for informational purposes only and
+do not modify the License. You may add Your own attribution
+notices within Derivative Works that You distribute, alongside
+or as an addendum to the NOTICE text from the Work, provided
+that such additional attribution notices cannot be construed
+as modifying the License.
+</code></pre><p>You may add Your own copyright statement to Your modifications and
+may provide additional or different license terms and conditions
+for use, reproduction, or distribution of Your modifications, or
+for any such Derivative Works as a whole, provided Your use,
+reproduction, and distribution of the Work otherwise complies with
+the conditions stated in this License.</p>
+</li>
+<li><p>Submission of Contributions. Unless You explicitly state otherwise,
+any Contribution intentionally submitted for inclusion in the Work
+by You to the Licensor shall be under the terms and conditions of
+this License, without any additional terms or conditions.
+Notwithstanding the above, nothing herein shall supersede or modify
+the terms of any separate license agreement you may have executed
+with Licensor regarding such Contributions.</p>
+</li>
+<li><p>Trademarks. This License does not grant permission to use the trade
+names, trademarks, service marks, or product names of the Licensor,
+except as required for reasonable and customary use in describing the
+origin of the Work and reproducing the content of the NOTICE file.</p>
+</li>
+<li><p>Disclaimer of Warranty. Unless required by applicable law or
+agreed to in writing, Licensor provides the Work (and each
+Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied, including, without limitation, any warranties or conditions
+of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+PARTICULAR PURPOSE. You are solely responsible for determining the
+appropriateness of using or redistributing the Work and assume any
+risks associated with Your exercise of permissions under this License.</p>
+</li>
+<li><p>Limitation of Liability. In no event and under no legal theory,
+whether in tort (including negligence), contract, or otherwise,
+unless required by applicable law (such as deliberate and grossly
+negligent acts) or agreed to in writing, shall any Contributor be
+liable to You for damages, including any direct, indirect, special,
+incidental, or consequential damages of any character arising as a
+result of this License or out of the use or inability to use the
+Work (including but not limited to damages for loss of goodwill,
+work stoppage, computer failure or malfunction, or any and all
+other commercial damages or losses), even if such Contributor
+has been advised of the possibility of such damages.</p>
+</li>
+<li><p>Accepting Warranty or Additional Liability. While redistributing
+the Work or Derivative Works thereof, You may choose to offer,
+and charge a fee for, acceptance of support, warranty, indemnity,
+or other liability obligations and/or rights consistent with this
+License. However, in accepting such obligations, You may act only
+on Your own behalf and on Your sole responsibility, not on behalf
+of any other Contributor, and only if You agree to indemnify,
+defend, and hold each Contributor harmless for any liability
+incurred by, or claims asserted against, such Contributor by reason
+of your accepting any such warranty or additional liability.</p>
+</li>
+</ol>
+<p><strong>FP16</strong></p>
+<p>The MIT License (MIT)</p>
+<p>Copyright (c) 2017 Facebook Inc.
+Copyright (c) 2017 Georgia Institute of Technology
+Copyright 2019 Google LLC</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<p><strong>FreeImage</strong>
+This software uses the FreeImage open source image library. See <a href="http://freeimage.sourceforge.net">http://freeimage.sourceforge.net</a> for details.</p>
+<p>FreeImage is used under the FIPL 1.0 version.</p>
+<p>License: FIPL 1.0 <a href="http://freeimage.sourceforge.net/freeimage-license.txt">http://freeimage.sourceforge.net/freeimage-license.txt</a></p>
+<p><strong>GamePlay3D</strong>
+Copyright (c) 2013 GamePlay3D
+License: Apache 2.0 <a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a></p>
+<p><strong>gemmlowp</strong>
+Copyright (c) 2019 The gemmlowp Authors.  All rights reserved.
+License: Apache 2.0 <a href="https://github.com/google/gemmlowp/blob/master/LICENSE">https://github.com/google/gemmlowp/blob/master/LICENSE</a></p>
+<pre><code>                             Apache License
+                       Version 2.0, January 2004
+                    http://www.apache.org/licenses/
+</code></pre><p>   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
+<ol>
+<li><p>Definitions.</p>
+<p>&quot;License&quot; shall mean the terms and conditions for use, reproduction,
+and distribution as defined by Sections 1 through 9 of this document.</p>
+<p>&quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+the copyright owner that is granting the License.</p>
+<p>&quot;Legal Entity&quot; shall mean the union of the acting entity and all
+other entities that control, are controlled by, or are under common
+control with that entity. For the purposes of this definition,
+&quot;control&quot; means (i) the power, direct or indirect, to cause the
+direction or management of such entity, whether by contract or
+otherwise, or (ii) ownership of fifty percent (50%) or more of the
+outstanding shares, or (iii) beneficial ownership of such entity.</p>
+<p>&quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+exercising permissions granted by this License.</p>
+<p>&quot;Source&quot; form shall mean the preferred form for making modifications,
+including but not limited to software source code, documentation
+source, and configuration files.</p>
+<p>&quot;Object&quot; form shall mean any form resulting from mechanical
+transformation or translation of a Source form, including but
+not limited to compiled object code, generated documentation,
+and conversions to other media types.</p>
+<p>&quot;Work&quot; shall mean the work of authorship, whether in Source or
+Object form, made available under the License, as indicated by a
+copyright notice that is included in or attached to the work
+(an example is provided in the Appendix below).</p>
+<p>&quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+form, that is based on (or derived from) the Work and for which the
+editorial revisions, annotations, elaborations, or other modifications
+represent, as a whole, an original work of authorship. For the purposes
+of this License, Derivative Works shall not include works that remain
+separable from, or merely link (or bind by name) to the interfaces of,
+the Work and Derivative Works thereof.</p>
+<p>&quot;Contribution&quot; shall mean any work of authorship, including
+the original version of the Work and any modifications or additions
+to that Work or Derivative Works thereof, that is intentionally
+submitted to Licensor for inclusion in the Work by the copyright owner
+or by an individual or Legal Entity authorized to submit on behalf of
+the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+means any form of electronic, verbal, or written communication sent
+to the Licensor or its representatives, including but not limited to
+communication on electronic mailing lists, source code control systems,
+and issue tracking systems that are managed by, or on behalf of, the
+Licensor for the purpose of discussing and improving the Work, but
+excluding communication that is conspicuously marked or otherwise
+designated in writing by the copyright owner as &quot;Not a Contribution.&quot;</p>
+<p>&quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+on behalf of whom a Contribution has been received by Licensor and
+subsequently incorporated within the Work.</p>
+</li>
+<li><p>Grant of Copyright License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the
+Work and such Derivative Works in Source or Object form.</p>
+</li>
+<li><p>Grant of Patent License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+(except as stated in this section) patent license to make, have made,
+use, offer to sell, sell, import, and otherwise transfer the Work,
+where such license applies only to those patent claims licensable
+by such Contributor that are necessarily infringed by their
+Contribution(s) alone or by combination of their Contribution(s)
+with the Work to which such Contribution(s) was submitted. If You
+institute patent litigation against any entity (including a
+cross-claim or counterclaim in a lawsuit) alleging that the Work
+or a Contribution incorporated within the Work constitutes direct
+or contributory patent infringement, then any patent licenses
+granted to You under this License for that Work shall terminate
+as of the date such litigation is filed.</p>
+</li>
+<li><p>Redistribution. You may reproduce and distribute copies of the
+Work or Derivative Works thereof in any medium, with or without
+modifications, and in Source or Object form, provided that You
+meet the following conditions:</p>
+<p>(a) You must give any other recipients of the Work or</p>
+<pre><code>Derivative Works a copy of this License; and
+</code></pre><p>(b) You must cause any modified files to carry prominent notices</p>
+<pre><code>stating that You changed the files; and
+</code></pre><p>(c) You must retain, in the Source form of any Derivative Works</p>
+<pre><code>that You distribute, all copyright, patent, trademark, and
+attribution notices from the Source form of the Work,
+excluding those notices that do not pertain to any part of
+the Derivative Works; and
+</code></pre><p>(d) If the Work includes a &quot;NOTICE&quot; text file as part of its</p>
+<pre><code>distribution, then any Derivative Works that You distribute must
+include a readable copy of the attribution notices contained
+within such NOTICE file, excluding those notices that do not
+pertain to any part of the Derivative Works, in at least one
+of the following places: within a NOTICE text file distributed
+as part of the Derivative Works; within the Source form or
+documentation, if provided along with the Derivative Works; or,
+within a display generated by the Derivative Works, if and
+wherever such third-party notices normally appear. The contents
+of the NOTICE file are for informational purposes only and
+do not modify the License. You may add Your own attribution
+notices within Derivative Works that You distribute, alongside
+or as an addendum to the NOTICE text from the Work, provided
+that such additional attribution notices cannot be construed
+as modifying the License.
+</code></pre><p>You may add Your own copyright statement to Your modifications and
+may provide additional or different license terms and conditions
+for use, reproduction, or distribution of Your modifications, or
+for any such Derivative Works as a whole, provided Your use,
+reproduction, and distribution of the Work otherwise complies with
+the conditions stated in this License.</p>
+</li>
+<li><p>Submission of Contributions. Unless You explicitly state otherwise,
+any Contribution intentionally submitted for inclusion in the Work
+by You to the Licensor shall be under the terms and conditions of
+this License, without any additional terms or conditions.
+Notwithstanding the above, nothing herein shall supersede or modify
+the terms of any separate license agreement you may have executed
+with Licensor regarding such Contributions.</p>
+</li>
+<li><p>Trademarks. This License does not grant permission to use the trade
+names, trademarks, service marks, or product names of the Licensor,
+except as required for reasonable and customary use in describing the
+origin of the Work and reproducing the content of the NOTICE file.</p>
+</li>
+<li><p>Disclaimer of Warranty. Unless required by applicable law or
+agreed to in writing, Licensor provides the Work (and each
+Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied, including, without limitation, any warranties or conditions
+of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+PARTICULAR PURPOSE. You are solely responsible for determining the
+appropriateness of using or redistributing the Work and assume any
+risks associated with Your exercise of permissions under this License.</p>
+</li>
+<li><p>Limitation of Liability. In no event and under no legal theory,
+whether in tort (including negligence), contract, or otherwise,
+unless required by applicable law (such as deliberate and grossly
+negligent acts) or agreed to in writing, shall any Contributor be
+liable to You for damages, including any direct, indirect, special,
+incidental, or consequential damages of any character arising as a
+result of this License or out of the use or inability to use the
+Work (including but not limited to damages for loss of goodwill,
+work stoppage, computer failure or malfunction, or any and all
+other commercial damages or losses), even if such Contributor
+has been advised of the possibility of such damages.</p>
+</li>
+<li><p>Accepting Warranty or Additional Liability. While redistributing
+the Work or Derivative Works thereof, You may choose to offer,
+and charge a fee for, acceptance of support, warranty, indemnity,
+or other liability obligations and/or rights consistent with this
+License. However, in accepting such obligations, You may act only
+on Your own behalf and on Your sole responsibility, not on behalf
+of any other Contributor, and only if You agree to indemnify,
+defend, and hold each Contributor harmless for any liability
+incurred by, or claims asserted against, such Contributor by reason
+of your accepting any such warranty or additional liability.</p>
+</li>
+</ol>
+<p><strong>gflags</strong>
+Copyright (c) 2006, Google Inc.
+License: BSD <a href="https://github.com/gflags/gflags/blob/master/COPYING.txt">https://github.com/gflags/gflags/blob/master/COPYING.txt</a></p>
+<p><strong>glog</strong>
+Copyright (c) 2008, Google Inc.
+License: BSD <a href="https://github.com/google/glog/blob/master/COPYING">https://github.com/google/glog/blob/master/COPYING</a></p>
+<p><strong>GSL</strong>
+Copyright (c) 2015, Microsoft Corporation
+License: MIT License <a href="https://github.com/microsoft/GSL/blob/master/LICENSE">https://github.com/microsoft/GSL/blob/master/LICENSE</a></p>
+<p><strong>Imagination PowerVR SDK</strong>
+Copyright (c) Imagination Technologies Ltd.
+License: MIT License (MIT) <a href="https://community.imgtec.com/developers/powervr/powervr-sdk-software-eula/">https://community.imgtec.com/developers/powervr/powervr-sdk-software-eula/</a></p>
+<p><strong>ilmbase</strong>
+Copyright (c) 2006, Industrial Light &amp; Magic, a division of Lucasfilm Entertainment Company Ltd. Portions contributed and copyright held by others as indicated. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ul>
+<li><p>Redistributions of source code must retain the above
+copyright notice, this list of conditions and the following
+disclaimer.</p>
+</li>
+<li><p>Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following
+disclaimer in the documentation and/or other materials provided with
+the distribution.</p>
+</li>
+<li><p>Neither the name of Industrial Light &amp; Magic nor the names of
+any other contributors to this software may be used to endorse or
+promote products derived from this software without specific prior
+written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</li>
+</ul>
+<p><strong>ISPC</strong>
+Copyright (c) 2010-2018, Intel Corporation. All rights reserved.</p>
+<p>License: BSD 3-clause License <a href="https://github.com/ispc/ispc/blob/master/LICENSE.txt">https://github.com/ispc/ispc/blob/master/LICENSE.txt</a></p>
+<p><strong>JSONCPP</strong> 
+Copyright (c) 2007-2010 by Baptiste Lepilleur
+License: MIT License <a href="http://jsoncpp.sourceforge.net/LICENSE">http://jsoncpp.sourceforge.net/LICENSE</a></p>
+<p><strong>LAPACK</strong>
+<a href="http://www.netlib.org/lapack">http://www.netlib.org/lapack</a></p>
+<pre><code>Copyright (c) 1992-2013 The University of Tennessee and The University
+                        of Tennessee Research Foundation.  All rights
+                        reserved.
+Copyright (c) 2000-2013 The University of California Berkeley. All
+                        rights reserved.
+Copyright (c) 2006-2013 The University of Colorado Denver.  All rights
+                        reserved.
+
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+- Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer listed
+  in this license in the documentation and/or other materials
+  provided with the distribution.
+
+- Neither the name of the copyright holders nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+The copyright holders provide no reassurances that the source code
+provided does not infringe any patent, copyright, or any other
+intellectual property rights of third parties.  The copyright holders
+disclaim any liability to any recipient for claims brought against
+recipient by any third party for infringement of that parties
+intellectual property rights.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</code></pre><p><strong>libJPEG</strong>
+Copyright (c) 1994-2013 Thomas G. Lane, Guido Vollbeding, IJG</p>
+<p><strong>libpng</strong>
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+License: libpng license <a href="http://www.libpng.org/pub/png/src/libpng-LICENSE.txt">http://www.libpng.org/pub/png/src/libpng-LICENSE.txt</a></p>
+<p><strong>libTIFF</strong>
+Copyright © 1988-1997 Sam Leffler
+Copyright © 1991-1997 Silicon Graphics, Inc.
+License: <a href="http://www.libtiff.org/">http://www.libtiff.org/</a></p>
+<p><strong>libwebp</strong>
+Copyright (c) 2010, Google Inc. All rights reserved.<a href="https://www.webmproject.org/license/software/"> https://www.webmproject.org/license/software/</a></p>
+<pre><code>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+Neither the name of Google nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</code></pre><p><strong>LODEPNG</strong> 
+Copyright (c) 2005-2013 Lode Vandevenne
+LICENSE: <a href="https://lodev.org/lodepng/">https://lodev.org/lodepng/</a></p>
+<p><strong>LZMA SDK</strong>
+LZMA SDK is written and placed in the public domain by Igor Pavlov.</p>
+<p>Some code in LZMA SDK is based on public domain code from another developers:
+  1) PPMd var.H (2001): Dmitry Shkarin
+  2) SHA-256: Wei Dai (Crypto++ library)
+<a href="http://www.7-zip.de/sdk.html">http://www.7-zip.de/sdk.html</a></p>
+<p><strong>MiniZip</strong>
+Copyright (c) 1998-2010 - by Gilles Vollant - version 1.1 64 bits from Mathias Svensson
+License: <a href="http://www.nf.mpg.de/vinci3/doc/license-minizip.html">http://www.nf.mpg.de/vinci3/doc/license-minizip.html</a></p>
+<p><strong>NEON_2_SSE</strong>
+Copyright (C) 2012-2020 Intel Corporation.  All rights reserved.
+created by Victoria Zhislina, the Senior Application Engineer, Intel Corporation,  <a href="mailto:victoria.zhislina@intel.com">victoria.zhislina@intel.com</a>
+<a href="https://github.com/intel/ARM_NEON_2_x86_SSE/blob/master/LICENSE">https://github.com/intel/ARM_NEON_2_x86_SSE/blob/master/LICENSE</a></p>
+<pre><code>                         License Agreement
+</code></pre><p>Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:</p>
+<ul>
+<li><p>Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.</p>
+</li>
+<li><p>The name of the copyright holders may not be used to endorse or promote products
+derived from this software without specific prior written permission.</p>
+</li>
+</ul>
+<p>This software is provided by the copyright holders and contributors &quot;as is&quot; and
+any express or implied warranties, including, but not limited to, the implied
+warranties of merchantability and fitness for a particular purpose are disclaimed.
+In no event shall the Intel Corporation or contributors be liable for any direct,
+indirect, incidental, special, exemplary, or consequential damages
+(including, but not limited to, procurement of substitute goods or services;
+loss of use, data, or profits; or business interruption) however caused
+and on any theory of liability, whether in contract, strict liability,
+or tort (including negligence or otherwise) arising in any way out of
+the use of this software, even if advised of the possibility of such damage.</p>
+<p><strong>OpenBLAS</strong>
+Copyright (c) 2011-2014, The OpenBLAS Project
+All rights reserved.
+<a href="https://github.com/xianyi/OpenBLAS/blob/develop/LICENSE">https://github.com/xianyi/OpenBLAS/blob/develop/LICENSE</a></p>
+<p>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:</p>
+<ol>
+<li><p>Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.</p>
+</li>
+<li><p>Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in
+the documentation and/or other materials provided with the
+distribution.</p>
+</li>
+<li>Neither the name of the OpenBLAS project nor the names of 
+its contributors may be used to endorse or promote products 
+derived from this software without specific prior written 
+permission.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+© 2020 GitHub, Inc.</p>
+<p><strong>OpenCL API Headers</strong>
+Copyright (c) 2008-2015 The Khronos Group Inc. 
+License: MIT License
+<a href="https://github.com/KhronosGroup/OpenCL-Headers/blob/master/LICENSE">https://github.com/KhronosGroup/OpenCL-Headers/blob/master/LICENSE</a></p>
+<p><strong>OpenJPEG</strong>
+This software is copyright © 2002-2014, Communications and Remote Sensing Laboratory, Universite catholique de Louvain (UCL), Belgium
+License: <a href="http://code.google.com/p/openjpeg/">http://code.google.com/p/openjpeg/</a></p>
+<p><strong>OPENSSL</strong>
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+License: OpenSSL License <a href="http://www.openssl.org/source/license.html">http://www.openssl.org/source/license.html</a></p>
+<p><strong>Regular Expression for URL validation</strong>
+Copyright (c) 2010-2018 Diego Perini (<a href="http://www.iport.it">http://www.iport.it</a>)
+MIT license: <a href="https://gist.github.com/dperini/729294">https://gist.github.com/dperini/729294</a></p>
+<p><strong>tar.h</strong>
+Copyright (c) 1994</p>
+<p>The Regents of the University of California.  All rights reserved.</p>
+<p>This code is derived from software contributed to Berkeley by
+Chuck Karish of Mindcraft, Inc.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:</p>
+<ol>
+<li>Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.</li>
+<li><p>All advertising materials mentioning features or use of this software
+must display the following acknowledgement:</p>
+<p>This product includes software developed by the University of
+California, Berkeley and its contributors.</p>
+</li>
+<li><p>Neither the name of the University nor the names of its contributors
+may be used to endorse or promote products derived from this software
+without specific prior written permission.</p>
+<p>THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS <code></code>AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.</p>
+<p>@(#)tar.h    8.2 (Berkeley) 1/4/94</p>
+</li>
+</ol>
+<p><strong>Tensorflow</strong>
+Copyright (c) 2019 The TensorFlow Authors.  All rights reserved.
+License: Apache 2.0 <a href="https://github.com/tensorflow/tensorflow/blob/master/LICENSE">https://github.com/tensorflow/tensorflow/blob/master/LICENSE</a></p>
+<pre><code>                             Apache License
+                       Version 2.0, January 2004
+                    http://www.apache.org/licenses/
+</code></pre><p>   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
+<ol>
+<li><p>Definitions.</p>
+<p>&quot;License&quot; shall mean the terms and conditions for use, reproduction,
+and distribution as defined by Sections 1 through 9 of this document.</p>
+<p>&quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+the copyright owner that is granting the License.</p>
+<p>&quot;Legal Entity&quot; shall mean the union of the acting entity and all
+other entities that control, are controlled by, or are under common
+control with that entity. For the purposes of this definition,
+&quot;control&quot; means (i) the power, direct or indirect, to cause the
+direction or management of such entity, whether by contract or
+otherwise, or (ii) ownership of fifty percent (50%) or more of the
+outstanding shares, or (iii) beneficial ownership of such entity.</p>
+<p>&quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+exercising permissions granted by this License.</p>
+<p>&quot;Source&quot; form shall mean the preferred form for making modifications,
+including but not limited to software source code, documentation
+source, and configuration files.</p>
+<p>&quot;Object&quot; form shall mean any form resulting from mechanical
+transformation or translation of a Source form, including but
+not limited to compiled object code, generated documentation,
+and conversions to other media types.</p>
+<p>&quot;Work&quot; shall mean the work of authorship, whether in Source or
+Object form, made available under the License, as indicated by a
+copyright notice that is included in or attached to the work
+(an example is provided in the Appendix below).</p>
+<p>&quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+form, that is based on (or derived from) the Work and for which the
+editorial revisions, annotations, elaborations, or other modifications
+represent, as a whole, an original work of authorship. For the purposes
+of this License, Derivative Works shall not include works that remain
+separable from, or merely link (or bind by name) to the interfaces of,
+the Work and Derivative Works thereof.</p>
+<p>&quot;Contribution&quot; shall mean any work of authorship, including
+the original version of the Work and any modifications or additions
+to that Work or Derivative Works thereof, that is intentionally
+submitted to Licensor for inclusion in the Work by the copyright owner
+or by an individual or Legal Entity authorized to submit on behalf of
+the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+means any form of electronic, verbal, or written communication sent
+to the Licensor or its representatives, including but not limited to
+communication on electronic mailing lists, source code control systems,
+and issue tracking systems that are managed by, or on behalf of, the
+Licensor for the purpose of discussing and improving the Work, but
+excluding communication that is conspicuously marked or otherwise
+designated in writing by the copyright owner as &quot;Not a Contribution.&quot;</p>
+<p>&quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+on behalf of whom a Contribution has been received by Licensor and
+subsequently incorporated within the Work.</p>
+</li>
+<li><p>Grant of Copyright License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the
+Work and such Derivative Works in Source or Object form.</p>
+</li>
+<li><p>Grant of Patent License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+(except as stated in this section) patent license to make, have made,
+use, offer to sell, sell, import, and otherwise transfer the Work,
+where such license applies only to those patent claims licensable
+by such Contributor that are necessarily infringed by their
+Contribution(s) alone or by combination of their Contribution(s)
+with the Work to which such Contribution(s) was submitted. If You
+institute patent litigation against any entity (including a
+cross-claim or counterclaim in a lawsuit) alleging that the Work
+or a Contribution incorporated within the Work constitutes direct
+or contributory patent infringement, then any patent licenses
+granted to You under this License for that Work shall terminate
+as of the date such litigation is filed.</p>
+</li>
+<li><p>Redistribution. You may reproduce and distribute copies of the
+Work or Derivative Works thereof in any medium, with or without
+modifications, and in Source or Object form, provided that You
+meet the following conditions:</p>
+<p>(a) You must give any other recipients of the Work or</p>
+<pre><code>Derivative Works a copy of this License; and
+</code></pre><p>(b) You must cause any modified files to carry prominent notices</p>
+<pre><code>stating that You changed the files; and
+</code></pre><p>(c) You must retain, in the Source form of any Derivative Works</p>
+<pre><code>that You distribute, all copyright, patent, trademark, and
+attribution notices from the Source form of the Work,
+excluding those notices that do not pertain to any part of
+the Derivative Works; and
+</code></pre><p>(d) If the Work includes a &quot;NOTICE&quot; text file as part of its</p>
+<pre><code>distribution, then any Derivative Works that You distribute must
+include a readable copy of the attribution notices contained
+within such NOTICE file, excluding those notices that do not
+pertain to any part of the Derivative Works, in at least one
+of the following places: within a NOTICE text file distributed
+as part of the Derivative Works; within the Source form or
+documentation, if provided along with the Derivative Works; or,
+within a display generated by the Derivative Works, if and
+wherever such third-party notices normally appear. The contents
+of the NOTICE file are for informational purposes only and
+do not modify the License. You may add Your own attribution
+notices within Derivative Works that You distribute, alongside
+or as an addendum to the NOTICE text from the Work, provided
+that such additional attribution notices cannot be construed
+as modifying the License.
+</code></pre><p>You may add Your own copyright statement to Your modifications and
+may provide additional or different license terms and conditions
+for use, reproduction, or distribution of Your modifications, or
+for any such Derivative Works as a whole, provided Your use,
+reproduction, and distribution of the Work otherwise complies with
+the conditions stated in this License.</p>
+</li>
+<li><p>Submission of Contributions. Unless You explicitly state otherwise,
+any Contribution intentionally submitted for inclusion in the Work
+by You to the Licensor shall be under the terms and conditions of
+this License, without any additional terms or conditions.
+Notwithstanding the above, nothing herein shall supersede or modify
+the terms of any separate license agreement you may have executed
+with Licensor regarding such Contributions.</p>
+</li>
+<li><p>Trademarks. This License does not grant permission to use the trade
+names, trademarks, service marks, or product names of the Licensor,
+except as required for reasonable and customary use in describing the
+origin of the Work and reproducing the content of the NOTICE file.</p>
+</li>
+<li><p>Disclaimer of Warranty. Unless required by applicable law or
+agreed to in writing, Licensor provides the Work (and each
+Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied, including, without limitation, any warranties or conditions
+of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+PARTICULAR PURPOSE. You are solely responsible for determining the
+appropriateness of using or redistributing the Work and assume any
+risks associated with Your exercise of permissions under this License.</p>
+</li>
+<li><p>Limitation of Liability. In no event and under no legal theory,
+whether in tort (including negligence), contract, or otherwise,
+unless required by applicable law (such as deliberate and grossly
+negligent acts) or agreed to in writing, shall any Contributor be
+liable to You for damages, including any direct, indirect, special,
+incidental, or consequential damages of any character arising as a
+result of this License or out of the use or inability to use the
+Work (including but not limited to damages for loss of goodwill,
+work stoppage, computer failure or malfunction, or any and all
+other commercial damages or losses), even if such Contributor
+has been advised of the possibility of such damages.</p>
+</li>
+<li><p>Accepting Warranty or Additional Liability. While redistributing
+the Work or Derivative Works thereof, You may choose to offer,
+and charge a fee for, acceptance of support, warranty, indemnity,
+or other liability obligations and/or rights consistent with this
+License. However, in accepting such obligations, You may act only
+on Your own behalf and on Your sole responsibility, not on behalf
+of any other Contributor, and only if You agree to indemnify,
+defend, and hold each Contributor harmless for any liability
+incurred by, or claims asserted against, such Contributor by reason
+of your accepting any such warranty or additional liability.</p>
+</li>
+</ol>
+<p><strong>TooN</strong>
+Copyright (c) 2005--2013, Tom Drummond, Edward Rosten, Gerhard Reitmayr, Georg Klein, Qi Pan All rights reserved.
+<a href="http://www.edwardrosten.com/cvd/toon.html">http://www.edwardrosten.com/cvd/toon.html</a></p>
+<p>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:</p>
+<ol>
+<li>Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND OTHER CONTRIBUTORS <code></code>AS IS&#39;&#39;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR OTHER CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.</p>
+<p><strong>YUI library 2.9.0</strong>
+Copyright (c) 2011, Yahoo! Inc.
+BSD license: <a href="http://developer.yahoo.com/yui/license.html">http://developer.yahoo.com/yui/license.html</a></p>
+<p><strong>zlib</strong>
+Copyright (c) 1995-2013 Jean-loup Gailly and Mark Adler
+Zlib license: <a href="http://www.zlib.net/zlib_license.html">http://www.zlib.net/zlib_license.html</a></p>
+
+                <footer id="footer">
+                    &copy; 2012-2019 <a href="https://www.wikitude.com">Wikitude GmbH</a> · <a href="https://www.wikitude.com/imprint">Imprint</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            var storageKey = "androidnative" + "9.6.0";
+            function stateChanged(nodes, nodesJson) {
+                localStorage.setItem(storageKey, JSON.stringify(nodesJson));
+            }
+
+            function getData() {
+                var data = localStorage.getItem(storageKey);
+                if (data) return JSON.parse(data);
+            }
+
+            var easytree = $("#toc").easytree({
+                data: getData(),
+                stateChanged: stateChanged
+            });
+
+            $('.easytree-exp-e .easytree-title').each(function () {
+                let openItem = $(this).parent();
+                var openItemId = openItem.attr('id');
+                var activeChildItem = openItem.parent().find('ul li .easytree-active');
+
+                if (!activeChildItem.length) {
+                    easytree.toggleNode(openItemId);
+                }
+            });
+
+            var activeItem = $('.easytree-active.easytree-exp-c .easytree-title');
+
+            if (activeItem) {
+                var activeItemId = activeItem.closest('.easytree-active').attr('id');
+                easytree.toggleNode(activeItemId);
+            }
+            
+        });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // Every image referenced from a Markdown document
+        $("#content img").each(function() {
+            // Let's put a caption if there is one
+            if($(this).attr("alt"))
+                $(this).wrap('<figure class="image"></figure>')
+                    .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
+            });
+
+        //
+        document.getElementById("documentationSelect").onchange = function() {
+            var selectedOption = this.value;
+            var targetLink ="";
+            //console.log(selectedOption);
+            if(selectedOption !== ""){
+                if (selectedOption.startsWith("external"))
+                {
+                    targetLink = selectedOption.substring(9);
+                }
+                else
+                {
+                    targetLink = "https://www.wikitude.com/external/doc/documentation/latest/" + selectedOption;
+                }
+                
+                window.top.location.href = targetLink; 
+            }
+        };
+    });
+    </script>
+
+</body>
+    <script>
+    var lightbox = new Lightbox();
+    lightbox.load();
+    hljs.initHighlightingOnLoad();
+  </script>
+     <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNSZJ73"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</html>

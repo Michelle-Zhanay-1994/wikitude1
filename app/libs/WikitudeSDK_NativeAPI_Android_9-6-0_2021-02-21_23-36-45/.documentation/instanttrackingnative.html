@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikitude SDK Android Native API 9.6.0 Documentation </title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    
+    <link type="text/css" rel="stylesheet" href="css/merged.min.css">
+    
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/highlight-9.15.6.min.js"></script>
+    <script type="text/javascript" src="js/lunr.min-0.7.2.js"></script>
+    <script type="text/javascript" src="js/lightbox.min-0.5.1.js"></script>
+    <script type="text/javascript" src="js/jquery.easytree.js"></script>
+ 
+    <script type="text/plain" data-cookieconsent="statistics">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-11754809-8', 'auto');
+		ga('set', 'checkProtocolTask', null);
+		ga('send', 'pageview');
+    </script>   
+
+</head>
+<body>
+    <div id="page">
+        <a name="top" /></a>
+        <header>
+            <h1><a href="">Documentation</a></h1>
+        </header>
+        <nav id="page-tabs">
+            <div class="nav-link">
+                <a href="https://support.wikitude.com/support/home" class="">Forum</a>
+                <a href="https://support.wikitude.com/support/solutions" class="">FAQ</a>
+                <a href="https://www.wikitude.com/documentation" class="active">Documentation</a>
+                <a href="https://www.wikitude.com/download">Download</a>
+            </div>
+            <div class="nav-url">
+                <a href="https://www.wikitude.com/">www.wikitude.com</a>
+            </div>
+        </nav>
+         
+
+<div id="sidebar">
+
+    <div id="sidebarHeader">
+
+        
+        <select id="documentationSelect">
+            
+                <option value=""  > --- Android --- </option>
+            
+                <option value="android"  > Android Javascript API </option>
+            
+                <option value="androidnative"  selected > Android Native API </option>
+            
+                <option value=""  > --- iOS --- </option>
+            
+                <option value="ios"  > iOS Javascript API </option>
+            
+                <option value="iosnative"  > iOS Native API </option>
+            
+                <option value=""  > --- Windows --- </option>
+            
+                <option value="uwpnative"  > UWP Native API </option>
+            
+                <option value=""  > --- Unity --- </option>
+            
+                <option value="unity"  > Unity </option>
+            
+                <option value="hololens"  > HoloLens Unity </option>
+            
+                <option value=""  > --- Extensions --- </option>
+            
+                <option value="flutter"  > Flutter </option>
+            
+                <option value="phonegap"  > Cordova </option>
+            
+                <option value="xamarin"  > Xamarin </option>
+            
+                <option value=""  > --- Smart Glasses --- </option>
+            
+                <option value="epson"  > Epson </option>
+            
+                <option value="vuzix"  > Vuzix </option>
+            
+                <option value=""  > --- Services --- </option>
+            
+            
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio/" > Studio User Manual </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio-api/index.html" > Studio API </option>
+             
+            <option value="external:" > --- Expert Edition --- </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/expertedition/" > Expert Edition Unity </option>
+             
+        </select>
+
+        
+
+        <h2>Wikitude SDK Android Native API</h2>
+        <div>Professional Edition</div>
+        
+        <div id="version">version: 9.6.0</div>
+        
+        
+        <div id="api-type">Native API</div>
+        
+
+    </div>
+
+    <input id="showNav" class="toggleNav" type="checkbox">
+    <label class="showNavLbl" for="showNav">Show Navigation</label>
+    <label class="hideNavLbl" for="showNav">Hide Navigation</label>
+
+    <div id="mainnav">
+        <form action="search.html"><input id="search" type="text" placeholder="Search documentation" name="q" /></form>
+        <nav id="toc">
+            
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#getting-started">Getting started</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#introduction-to-the-wikitude-sdk">Introduction to the Wikitude SDK</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#recommended-usage-of-this-documentation">Recommended Usage of this Documentation</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#the-wikitude-native-sdk-augmented-reality-for-your-own-app">The Wikitude Native SDK - Augmented Reality for your own app</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#architecture-of-the-wikitude-sdk">Architecture of the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#the-wikitude-developer-portal">The Wikitude Developer Portal</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#feedback-and-contact">Feedback and Contact</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="requirementsandroidnative.html#requirements">Requirements</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="requirementsandroidnative.html#android-development">Android Development</a>
+            
+        </li>
+    
+        <li>
+            <a href="requirementsandroidnative.html#supported-android-devices">Supported Android Devices</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#project-setup">Project Setup</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="setupguideandroidnative.html#create-an-android-project">Create an Android project</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#adding-the-wikitude-sdk">Adding the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#add-permissions">Add permissions</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#trial-license-key-generation">Trial license key generation</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#wtc-file-generation">WTC file generation</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#license-key">License Key</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="triallicense.html#how-to-obtain-a-free-trial-license">How to obtain a free trial license</a>
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#where-should-i-enter-the-license-key">Where should I enter the license key</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="samplesnative.html#examples">Examples</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="samplesnative.html#wikitude-sdk-android-native-api-examples">Wikitude SDK Android Native API Examples</a>
+            
+        </li>
+    
+        <li>
+            <a href="samplesnative.html#setup">Setup</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#image-recognition">Image Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="imagerecognitionnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-recognition-range">Extended Recognition Range</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#simple-image-tracking-android">Simple Image Tracking Android</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#multiple-image-targets-tracking">Multiple Image Targets Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-image-tracking">Extended Image Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsimagerecognition.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-tracking">Instant Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#smart-seamless-ar-tracking">SMART - Seamless AR Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#basic-instant-tracking">Basic Instant Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-scene-picking">Instant Scene Picking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#persistent-instant-targets">Persistent Instant Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#save-instant-target">Save Instant Target</a>
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#load-instant-target">Load Instant Target</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#plane-detection-experimental">Plane Detection - Experimental</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#object-tracking">Object Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#introduction-to-object-and-scene-recognition">Introduction to Object and Scene Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#scene-recognition">Scene Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#simple-object-tracking">Simple Object Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#extended-object-tracking">Extended Object Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsobjectrecognition.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition">Cloud Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition-sample">Cloud Recognition Sample</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#on-click-cloud-recognition">On-Click Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#continuous-cloud-recognition">Continuous Cloud Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="renderingnative.html#rendering">Rendering</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="renderingnative.html#rendering-apis">Rendering APIs</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="renderingnative.html#external-rendering">External Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="renderingnative.html#internal-rendering">Internal Rendering</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#hardware-control">Hardware Control</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-settings">Camera Settings</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-position">Camera Position</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-focus-mode">Camera Focus Mode</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#manual-camera-focus">Manual Camera Focus</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera2-api-usage">Camera2 API usage</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-resolution">Camera Resolution</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-zoom">Camera Zoom</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#flashlight">Flashlight</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#focus-at-point-of-interest">Focus at point of interest</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#expose-at-point-of-interest">Expose at point of interest</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-controls">Camera Controls</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#plugins-api">Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapi.html#about-wikitude-sdk-plugins">About Wikitude SDK Plugins</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapi.html#plugin-base-class">Plugin Base Class</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#information-about-recognized-targets">Information about Recognized Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#platform-specifics">Platform Specifics</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#android-c-wikitude-plugin-library-build">Android C++ Wikitude Plugin Library Build</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#registering-plugins">Registering Plugins</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#barcode-and-qr-code-reader">Barcode and QR code reader</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#face-detection">Face Detection</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#input-plugins-api">Input Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="inputpluginsapi.html#about-wikitude-native-sdk-input-plugins">About Wikitude Native SDK Input Plugins</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#camera-frame-input-plugin-module-class">Camera Frame Input Plugin Module Class</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#camera-frame-input-plugin-module-implementation">Camera Frame Input Plugin Module Implementation</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#frame-metadata">Frame Metadata</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#frame-rendering">Frame Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#simple-input-plugin">Simple Input Plugin</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsplugins.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#target-management">Target Management</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets">Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#wikitude-studio">Wikitude Studio</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#use-projects-wtc-file-in-your-app">Use project's WTC file in your app</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets-for-cloud-recognition">Image Targets for Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#physical-height-for-image-targets">Physical Height for Image Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#object-targets">Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-based-conversion">Image-based conversion</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#best-practice-for-image-targets">Best practice for Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetguide.html#summary">Summary</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#optimal-image-dimensions">Optimal Image Dimensions</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#low-contrast-images">Low contrast images</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#distribution-of-textured-areas">Distribution of textured areas</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-whitespace">Images with whitespace</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#vector-based-graphics">Vector-based graphics</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-a-lot-of-text">Images with a lot of text</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#repetitive-patterns">Repetitive patterns</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#best-practice-for-object-targets">Best practice for Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttargetguide.html#characteristics-of-easily-trackable-objects">Characteristics of easily trackable objects</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#general-pieces-of-advice">General pieces of advice</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#image-based-conversion-best-practice">Image-based conversion - Best practice</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#targets-versioning">Targets Versioning</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetversioning.html#image-targets">Image Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#object-targets">Object Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="studio-api.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api-reference">Studio API Reference</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#api-reference">API Reference</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="reference.html#android-native-api-javadocs">Android Native API JavaDocs</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate">Migrate</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-to-93">Migrate to 9.3</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-891-to-810">Migrate from 8.9.1 to 8.10</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-832-to-84">Migrate from 8.3.2 to 8.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-80-to-81">Migrate from 8.0 to 8.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-72-to-80">Migrate from 7.2 to 8.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-71-to-72">Migrate from 7.1 to 7.2</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-70-to-71">Migrate from 7.0 to 7.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-21-to-70">Migrate from 2.1 to 7.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-201-to-21">Migrate from 2.0.1 to 2.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-14-to-20">Migrate from 1.4 to 2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-13-to-14">Migrate from 1.3 to 1.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-10-to-11">Migrate from 1.0 to 1.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#release-notes-wikitude-sdk-professional-edition">Release Notes Wikitude SDK Professional Edition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-960">Wikitude SDK 9.6.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-950">Wikitude SDK 9.5.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-940">Wikitude SDK 9.4.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-931">Wikitude SDK 9.3.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-93">Wikitude SDK 9.3</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-92">Wikitude SDK 9.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-910">Wikitude SDK 9.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-900">Wikitude SDK 9.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-8100">Wikitude SDK 8.10.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-891">Wikitude SDK 8.9.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-89">Wikitude SDK 8.9</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-87">Wikitude SDK 8.7</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-86">Wikitude SDK 8.6</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-85">Wikitude SDK 8.5</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-84">Wikitude SDK 8.4</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-832">Wikitude SDK 8.3.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-830">Wikitude SDK 8.3.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-820">Wikitude SDK 8.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-810">Wikitude SDK 8.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-800">Wikitude SDK 8.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-721">Wikitude SDK 7.2.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-720">Wikitude SDK 7.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-710">Wikitude SDK 7.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-700">Wikitude SDK 7.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-210">Wikitude SDK Native API 2.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-201">Wikitude SDK Native API 2.0.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-200">Wikitude SDK Native API 2.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-141">Wikitude SDK Native API 1.4.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-140">Wikitude SDK Native API 1.4.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-130">Wikitude SDK Native API 1.3.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-121">Wikitude SDK Native API 1.2.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-120">Wikitude SDK Native API 1.2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-110">Wikitude SDK Native API 1.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-100">Wikitude SDK Native API 1.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-100-beta">Wikitude SDK Native API 1.0.0 beta</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="license.html#license-terms">License Terms</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="license.html#terms-of-service-for-wikitudes-software-development-kit">Terms of Service for Wikitude's Software Development Kit</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="third-party-license.html#third-party-software-used">Third party software used</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+        </nav>
+        
+        <nav id="links">
+            <ul>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</div>
+        <div id="wrapper">
+            <div id="content">
+                <h1 id="instant-tracking">Instant Tracking</h1>
+<p>The following sections detail the instant tracking feature of the Wikitude Native SDK by introducing a minimal implementation, showcasing the simplicity the Wikitude Native SDK provides.</p>
+<h2 id="smart-seamless-ar-tracking">SMART - Seamless AR Tracking</h2>
+<p>SMART is a seamless API which integrates ARKit, ARCore and Wikitude’s SLAM in a single augmented reality SDK, cross-platform, for any device. It ensures the delivery of the best possible augmented reality experience on a wider range of devices, covering 92,6% of iOS devices and about 35% of Android devices available in the market.</p>
+<p>SMART is enabled by default but can be disabled in the <code>InstantTrackerConfiguration</code> with <code>setSMARTEnabled</code>. This behaviour can not be changed during runtime.</p>
+<pre><code class="lang-java">InstantTrackerConfiguration configuration = new InstantTrackerConfiguration();
+configuration.setSMARTEnabled(false);
+instantTracker = mWikitudeSDK.getTrackerManager().createInstantTracker(this, configuration);
+</code></pre>
+<p>To enable ARCore with Wikitude follow the instructions in the documentation of ARCore in the section <a href="https://developers.google.com/ar/develop/java/enable-arcore"><code>Enable ARCore</code></a>. This can also be seen in the examples app.</p>
+<p>To check if the device supports platform assisted tracking with SMART (tracking with ARCore) <code>TrackerManager.isPlatformAssistedTrackingSupported</code> must be used. ARCore has a mechanism to download and install the required ARCore companion app automatically. Initiating this procedure with the Wikitude Native SDK is a two step process of calling <code>TrackerManager.isPlatformAssistedTrackingSupported</code> and, if applicable, creating an instant tracker using <code>TrackerManager.createInstantTracker</code>. The first call will start a continuous query to determine whether the current device supports ARCore. It will repeatedly report the current status through the <code>onAvailabilityChanged</code> callback function. This callback provides one of the following enumeration constants as an input parameter.</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INDETERMINATE_QUERY_FAILED</td>
+<td>The query failed for some reason. Try again or create the tracker to run without ARCore. The callback will not be invoked again.</td>
+</tr>
+<tr>
+<td>CHECKING_QUERY_ONGOING</td>
+<td>The query is currently ongoing. No action is required. The callback will be invoked again.</td>
+</tr>
+<tr>
+<td>UNSUPPORTED</td>
+<td>The device does not support ARCore. Create the tracker to run without ARCore. The callback will not be invoked again.</td>
+</tr>
+<tr>
+<td>SUPPORTED_UPDATE_REQUIRED</td>
+<td>The device does support ARCore, but the companion app needs to be installed or updated. Create the tracker to start the installation process. The callback will be invoked again.</td>
+</tr>
+<tr>
+<td>SUPPORTED</td>
+<td>The device does support ARCore and the current version of the companion is already installed. Create the tracker to run with ARCore. The callback will not be invoked again.</td>
+</tr>
+</tbody>
+</table>
+<p>Translated into Java code, the table results in the following snippet.</p>
+<pre><code class="lang-java">wikitudeSDK.getTrackerManager().isPlatformAssistedTrackingSupported(new IsPlatformAssistedTrackingAvailableCallback() {
+    @Override
+    public void onAvailabilityChanged(SmartAvailability availability) {
+        switch (availability) {
+            case INDETERMINATE_QUERY_FAILED:
+                /* may try again here */
+                instantTracker = wikitudeSDK.getTrackerManager().createInstantTracker(InstantTrackingActivity.this, null);
+                break;
+            case CHECKING_QUERY_ONGOING:
+                /* be patient; do nothing */
+                break;
+            case UNSUPPORTED:
+            case SUPPORTED_UPDATE_REQUIRED:
+            case SUPPORTED:
+                if (instantTracker == null) {
+                    instantTracker = wikitudeSDK.getTrackerManager().createInstantTracker(InstantTrackingActivity.this, null);
+                }
+                break;
+        }
+    }
+});
+</code></pre>
+<p>Be careful not to create the tracker twice when an installation of the ARCore app is required. You will receive the <code>SUPPORTED_UPDATE_REQUIRED</code> constant followed by the <code>SUPPORTED</code> constant, but will want to only create the tracker once. The snippet presented avoids doubly creating the tracker by checking its reference for <code>null</code>.</p>
+<p>SMART provides improved tracking capabilities at the expense of control. Because of that some Wikitude SDK features are not available when platform tracking capabilities are used by enabling SMART.</p>
+<table>
+<thead>
+<tr>
+<th>Features</th>
+<th style="text-align:center">SMART ON and  platform assisted tracking supported</th>
+<th style="text-align:center">SMART OFF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Improved Tracking</td>
+<td style="text-align:center">✓</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>Plane Orientation</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">✓</td>
+</tr>
+<tr>
+<td>Camera Control</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">✓</td>
+</tr>
+<tr>
+<td>Save and Load Instant Targets</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">✓</td>
+</tr>
+<tr>
+<td>Plane Detection</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">✓</td>
+</tr>
+</tbody>
+</table>
+<p><a id="introduction"></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>Instant tracking is an algorithm that, contrary to those previously introduced in the Wikitude SDK, does not aim to recognize a predefined target and start the tracking procedure thereafter, but immediately start tracking in an arbitrary environment. This enables very specific use cases to be implemented.</p>
+<p>The algorithm works in two distinct states; the first of which is the initialization state. In this state the user is required to define the origin of the tracking procedure by simply pointing the device and thereby aligning an indicator. Once the alignment is found to be satisfactory by the user (which the users needs to actively confirm), a transition to the tracking state is performed. In this state, the environment is being tracked, which allows for augmentations to be placed within the scene.</p>
+<p><img src="images/instant_tracking_androidnative.png" alt="Initialization State and Tracking State" title="Initialization State and Tracking State"></p>
+<p>The instant tracking algorithm requires another input value to be provided in the initialization state. Specifically, the height of the tracking device above ground is required in order to accurately adjust the scale of augmentations within the scene. To this end, the example features a range input element that allows the height to be set in meters.</p>
+<p>During the initialization, another parameter can be set which influences the alignment of the instant tracking ground plane. This ground plane is represented by the initialization indicator and can be rotated in order to start instant tracking at e.g. a wall instead of the floor.
+Please refer to the <a href="../Reference/Android%20Native%20SDK%20API/com/wikitude/tracker/InstantTrackerConfiguration.html#setTrackingPlaneOrientation"><code>InstantTrackerConfiguration reference</code></a> for detailed information.</p>
+<p><a id="basicinstanttracking"></a></p>
+<h2 id="basic-instant-tracking">Basic Instant Tracking</h2>
+<p>The <em>Instant Tracking</em> example provides a minimal implementation of the instant tracking algorithm. First make sure we import the packages below.</p>
+<pre><code class="lang-java">import com.wikitude.tracker.InstantTracker;
+import com.wikitude.tracker.InstantTrackerListener;
+import com.wikitude.tracker.InstantTarget;
+import com.wikitude.tracker.InitializationPose;
+import com.wikitude.tracker.InstantTrackingState;
+</code></pre>
+<p>Next we have to make some additions to our <code>Activity</code>. In order to use instant tracking, the <code>Activity</code> has to implement the <code>InstantTrackerListener</code> and we will need an <code>InstantTracker</code> and an <code>InstantTrackingState</code> as members.</p>
+<pre><code class="lang-java">public class InstantTrackingActivity extends Activity implements InstantTrackerListener, ExternalRendering {
+</code></pre>
+<pre><code class="lang-java">private InstantTracker instantTracker;
+
+private InstantTrackingState currentTrackingState = InstantTrackingState.Initializing;
+</code></pre>
+<p>Initializing the <code>InstantTracker</code> is fairly straightforward. Just run this line in the initialization phase of the <code>Activity</code>.</p>
+<pre><code class="lang-java">instantTracker = wikitudeSDK.getTrackerManager().createInstantTracker(this, null);
+</code></pre>
+<p>An <code>InstantTracker</code> can, minimally, be instantiated with just the line above, although supplying drawables to be rendered in both the initialization state and the tracking state is advisable for any practical use case. Therefore a <code>CustomSurfaceView</code> instance is generated and supplied as well.</p>
+<pre><code class="lang-java">@Override
+public void onRenderExtensionCreated(final RenderExtension renderExtension_) {
+    glRenderer = new GLRenderer(renderExtension_);
+    surfaceView = new CustomSurfaceView(getApplicationContext(), glRenderer);
+    driver = new Driver(surfaceView, 30);
+    setContentView(surfaceView);
+
+    FrameLayout viewHolder = new FrameLayout(getApplicationContext());
+    setContentView(viewHolder);
+
+    viewHolder.addView(surfaceView);
+</code></pre>
+<p>To use our <code>CustomSurfaceView</code> for the initialization of <code>InstantTracker</code>, implement the <code>onInitializationPoseChanged</code> callback function of the <code>InstantTrackerListener</code>.</p>
+<pre><code class="lang-java">@Override
+public void onInitializationPoseChanged(InstantTracker tracker, InitializationPose pose) {
+    StrokedRectangle strokedRectangle = getRectangle();
+    strokedRectangle.projectionMatrix = pose.getProjectionMatrix();
+    strokedRectangle.viewMatrix = pose.getViewMatrix();
+}
+</code></pre>
+<p>This callback function supplies an <code>InstantTracker</code> and the current <code>InitializationPose</code>, the latter of which can be used to set the pose of the augmentation, in our example an <code>StrokedRectangle</code>, so it is displayed properly during the initialization state.</p>
+<p>When using SMART and ARCore is supported it is only possible to start tracking once ARCore has found a plane. It is advisable to inform the user when it is possible to start tracking. In our example this is done by changing the color of the augmentation from red, when tracking is not possible, to green, when it is possible. To check if tracking is possible <code>InstantTracker.canStartTracking</code> can be used. </p>
+<pre><code class="lang-java">@Override
+public void onInitializationPoseChanged(InstantTracker tracker, InitializationPose pose) {
+    [...]
+    if (instantTracker.canStartTracking()) {
+        strokedRectangle.setColor(0.0f, 1.0f, 0.0f);
+    } else {
+        strokedRectangle.setColor(1.0f, 0.0f, 0.0f);
+    }
+}
+</code></pre>
+<p>We have to make sure that we always know in which state the instant tracker currently is. In order to assure this, we update <code>currentTrackingState</code> in every call of <code>onStateChanged</code>. </p>
+<pre><code class="lang-java">@Override
+public void onStateChanged(InstantTracker tracker, InstantTrackingState state) {
+    currentTrackingState = state;
+
+    runOnUiThread(() -&gt; {
+        if (state == InstantTrackingState.Tracking) {
+            changeStateButton.setText(R.string.instant_tracking_button_start_initialization); 
+            getRectangle().setColor(1.0f, 0.58f, 0.16f);
+        } else {
+            changeStateButton.setText(R.string.instant_tracking_button_start_tracking);
+        }
+    });
+}
+</code></pre>
+<p>Next we need a means to transition from one state to the other. For this task we provide a button, which toggles the current tracking state.</p>
+<pre><code class="lang-java">final Button changeStateButton = (Button) findViewById(R.id.on_change_tracker_state);
+changeStateButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(final View view) {
+        if (currentTrackingState == InstantTrackingState.Initializing) {
+            instantTracker.setState(InstantTrackingState.Tracking);
+        } else {
+            instantTracker.setState(InstantTrackingState.Initializing);
+        }
+    }
+});
+</code></pre>
+<p>Now we can switch between the two states, so we need to update position of the rectangle once the tracking state is active, which we do in the <code>onTracked</code> callback function.</p>
+<pre><code class="lang-java">@Override
+public void onTracked(InstantTracker tracker, InstantTarget target) {
+    StrokedRectangle strokedRectangle = getRectangle();
+    strokedRectangle.projectionMatrix = target.getProjectionMatrix();
+    strokedRectangle.viewMatrix = target.getViewMatrix();
+}
+</code></pre>
+<p>Lastly, we provide a <code>SeekBar</code> to set the <code>deviceHeight</code> property of the <code>InstantTracker</code>. While this change is, strictly speaking, not required, we strongly recommend every application to supply the device height accurately by this method or another for the Wikitude SDK to provide an accurate scale.</p>
+<pre><code class="lang-java">final SeekBar heightSlider = (SeekBar) findViewById(R.id.heightSeekBar);
+heightSlider.setMax(190);
+heightSlider.setProgress(90);
+heightSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+        float height = (progress + 10) / 100.f;
+        instantTracker.setDeviceHeightAboveGround(height);
+        heightBox.setText(String.format( &quot;%.2f&quot;, height ));
+    }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+
+    }
+});
+</code></pre>
+<p>The example outlined in this section renders an orange rectangle augmentation when in initialization state which then stays on its originally assigned position when in tracking state. While the example is quite trivial, we believe it serves the purpose of familiarizing the reader with the core concepts of instant tracking well.</p>
+<p><img src="images/instant_tracking_androidnative.png" alt="Initialization State and Tracking State" title="Initialization State and Tracking State"></p>
+<p><a id="instantscenepicking"></a></p>
+<h2 id="instant-scene-picking">Instant Scene Picking</h2>
+<p>The instant tracking feature further allows for 3D points to be queried from the underlying point cloud structure. This section is concerned with showcasing this feature based on the corresponding sample of the sample application.</p>
+<p>To utilize this feature a 2D input position on the screen is required. The <code>OnTouchListener</code> of the <code>GLSurfaceView</code> is set for that purpose.</p>
+<pre><code class="lang-java">this.surfaceView.setOnTouchListener(new View.OnTouchListener() {
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        [...]
+    }
+});
+</code></pre>
+<p>The <code>onTouch</code> function is implemented to query the touch position and pass these coordinates to the <code>convertScreenCoordinateToPointCloudCoordinate</code> function. These input coordinates have their origin in the top-left corner of the screen and are within the interval [0, screen_width_in_pixels) and [0, screen_height_in_pixels). Within the completion handler function, a boolean value and a 3D point is received. The former informs on whether the operation completed successfully or not; the latter contains the result in case of success, <code>null</code> in case of failure. Note that the query will fail whenever no point cloud position can be found for the input coordinate within a specific interval. For successful queries a <code>StrokedCube</code> instance is generated and placed at the resulting position as an augmentation.</p>
+<pre><code class="lang-java">this.surfaceView.setOnTouchListener(new View.OnTouchListener() {
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+            Point2D&lt;Float&gt; screenCoordinates = new Point2D&lt;&gt;();
+            screenCoordinates.setX(event.getX());
+            screenCoordinates.setY(event.getY());
+
+            instantTracker.convertScreenCoordinateToPointCloudCoordinate(screenCoordinates, new InstantTrackerScenePickingCallback() {
+                @Override
+                public void onCompletion(boolean success, Point3D result) {
+                    if (success) {
+                        StrokedCube strokedCube = new StrokedCube();
+                        strokedCube.setXScale(0.05f);
+                        strokedCube.setYScale(0.05f);
+                        strokedCube.setZScale(0.05f);
+                        strokedCube.setXTranslate(result.getX());
+                        strokedCube.setYTranslate(result.getY());
+                        strokedCube.setZTranslate(result.getZ());
+                        glRenderer.setRenderablesForKey(&quot;&quot; + cubeID++, strokedCube, null);
+                    }
+                }
+            });
+        }
+
+        return true;
+    }
+});
+</code></pre>
+<p>Finally, running the sample allows cube augmentations to be placed on screen touch when in tracking state.</p>
+<div style="text-align: center;">
+    <div style="display: inline-block;">
+        <img src="images/instant_scene_picking_androidnative.png" style="width: 500px;"/>
+        <p>instant scene picking on the floor of the Wikitude offices</p>
+    </div>
+</div>
+
+
+<p><a id="persistentinstanttargets"></a></p>
+<h2 id="persistent-instant-targets">Persistent Instant Targets</h2>
+<p>The save and load instant targets feature allows for
+AR experiences to be persistently accessed by multiple users across devices and operating systems. Furthermore instant targets can be expanded on the fly.
+This section is concerned with showcasing this feature based on the corresponding samples of the sample application.
+This feature is not available with platform assisted tracking enabled.</p>
+<p><a id="saveinstanttarget"></a></p>
+<h3 id="save-instant-target">Save Instant Target</h3>
+<p>To save an instant target there has to be an active InstantTracker in the tracking state and the directories of the provided path have to exist.
+Any permissions required to write to the provided path have to be granted.
+Providing a Handler to receive the callbacks on a specific thread is optional.</p>
+<pre><code class="lang-java">instantTracker.saveCurrentInstantTarget(
+        new File(getExternalFilesDir(null), &quot;savedTarget.wto&quot;).getAbsolutePath(),
+        new CompletionCallback() {
+            @Override
+            public void onCompletion() {
+                // ...
+            }
+        },
+        new ErrorCallback() {
+            @Override
+            public void onError(@NonNull final WikitudeError error) {
+                // ...
+            }
+        },
+        new Handler(getMainLooper()) // Receive callbacks on main thread.
+);
+</code></pre>
+<p><a id="loadinstanttarget"></a></p>
+<h3 id="load-instant-target">Load Instant Target</h3>
+<p>To load an instant target there has to be an active tracker and a previously saved instant target.</p>
+<p>The <code>InstantTargetRestorationConfiguration</code> defines the behaviour of the loaded instant target. In the example the policy is set to <code>ALLOW_EXPANSION</code> which means that the Wikitude SDK will try to find new points it can track.</p>
+<pre><code class="lang-java">InstantTargetRestorationConfiguration configuration = new InstantTargetRestorationConfiguration();
+configuration.setInstantTargetExpansionPolicy(InstantTargetRestorationConfiguration.InstantTargetExpansionPolicy.ALLOW_EXPANSION);
+</code></pre>
+<p>To load an previously saved instant target, a <code>TargetCollectionResource</code> has to be created from the file saved by <code>saveCurrentInstantTarget</code>.</p>
+<pre><code class="lang-java">String savedTargetPath = &quot;file://&quot; + new File(getExternalFilesDir(null), &quot;savedTarget.wto&quot;).getAbsolutePath();
+TargetCollectionResource savedTarget = wikitudeSDK.getTrackerManager().createTargetCollectionResource(savedTargetPath);
+</code></pre>
+<p>After the instant target is loaded the tracker will immediately try to find and track it.
+Providing a Handler to receive the callbacks on a specific thread is optional.</p>
+<pre><code class="lang-java">instantTracker.loadExistingInstantTarget(
+        savedTarget,
+        new CompletionCallback() {
+            @Override
+            public void onCompletion() {
+                // ...
+            }
+        },
+        new ErrorCallback() {
+            @Override
+            public void onError(@NonNull final WikitudeError error) {
+                // ...
+            }
+        },
+        configuration,
+        new Handler(getMainLooper()) // Receive callbacks on main thread.
+);
+</code></pre>
+<p><a id="planedetection"></a></p>
+<h2 id="plane-detection-experimental">Plane Detection - Experimental</h2>
+<p>Once Plane detection is enabled, the Wikitude SDK will search for planar surfaces in the representation of the scene (the point cloud). Sufficient and accurate information will then produce planar surfaces, that developers can use to interact with the actual scene. Hit testing will use found planes for a better estimate of depth values in the scene. The algorithm can detect different types of planes</p>
+<ul>
+<li><code>Horizontal Up</code> (e.g. floor, carpet, table)</li>
+<li><code>Horizontal Down</code> (e.g. ceiling)</li>
+<li><code>Vertical</code> (walls,...)</li>
+<li><code>Arbitrary</code> (ramps, staircases,...)</li>
+</ul>
+<p>Developers can choose which type of planes they are interested in and filter correspondingly.</p>
+<p>To use plane detection the <a href="../Reference/Android%20Native%20SDK%20API/com/wikitude/tracker/InstantTracker.html"><code>InstantTracker</code></a> has to be created with an <a href="../Reference/Android%20Native%20SDK%20API/com/wikitude/tracker/InstantTrackerConfiguration.html"><code>InstantTrackerConfiguration</code></a> that has plane detection enabled.
+For this purpose the <code>InstantTrackerConfiguration.enablePlaneDetection</code> has to be called with a <a href="../Reference/Android%20Native%20SDK%20API/com/wikitude/tracker/PlaneDetectionConfiguration.html"><code>PlaneDetectionConfiguration</code></a>.
+Currently plane detection is only available with SMART disabled.</p>
+<p>e.g.:</p>
+<pre><code class="lang-java">protected void onCreate(Bundle savedInstanceState) {
+    ... 
+
+    PlaneDetectionConfiguration planeDetectionConfiguration = new PlaneDetectionConfiguration();
+    planeDetectionConfiguration.setPlaneFilter(PlaneFilter.ANY);
+    planeDetectionConfiguration.enableConvexHull();
+
+    InstantTrackerConfiguration trackerConfiguration = new InstantTrackerConfiguration();
+    trackerConfiguration.setSMARTEnabled(false);
+    trackerConfiguration.enablePlaneDetection(planeDetectionConfiguration);
+
+    instantTracker = wikitudeSDK.getTrackerManager().createInstantTracker(PlaneDetectionActivity.this, trackerConfiguration);
+
+    ...
+}
+</code></pre>
+<p>The <a href="../Reference/Android%20Native%20SDK%20API/com/wikitude/tracker/InstantTrackerListener.html"><code>InstantTrackerlistener</code></a> has three callbacks for plane detection which notify about recognition, tracking, and losing tracking.</p>
+<pre><code class="lang-java">@Override
+public void onPlaneRecognized(final InstantTracker tracker, final Plane plane) {
+    PlanePolygon planePolygon = new PlanePolygon();
+    planePolygon.setPoints(plane.getConvexHull());
+    planePolygon.viewMatrix = plane.getViewMatrix();
+    switch (plane.getPlaneType()) {
+        case HORIZONTAL_UPWARD:
+            planePolygon.setColor(0, 0, 1);
+            break;
+        case VERTICAL:
+            planePolygon.setColor(0.93f, 0.13f, 0.78f);
+            break;
+        case ARBITRARY:
+            planePolygon.setColor(0.25f, 0.93f, 0.13f);
+            break;
+    }
+
+    glRenderer.setRenderablesForKey(&quot;plane-&quot; + plane.getUniqueId(), planePolygon, null);
+}
+
+@Override
+public void onPlaneLost(final InstantTracker tracker, final Plane plane) {
+    glRenderer.removeRenderablesForKey(&quot;plane-&quot; + plane.getUniqueId());
+}
+
+@Override
+public void onPlaneTracked(final InstantTracker tracker, final Plane plane) {
+    PlanePolygon planePolygon = (PlanePolygon) glRenderer.getRenderableForKey(&quot;plane-&quot; + plane.getUniqueId());
+    planePolygon.viewMatrix = plane.getViewMatrix();
+    planePolygon.setPoints(plane.getConvexHull());
+}
+</code></pre>
+<p>A <a href="../Reference/Android%20Native%20SDK%20API/com/wikitude/tracker/Plane.html"><code>Plane</code></a> can be rendered like all other tracking targets but in addition to the viewMatrix and extents it also provides a convex hull which can be rendered directly as a triangle fan. 
+<a href="../Reference/Android%20Native%20SDK%20API/com/wikitude/tracker/InstantTracker.html#convertScreenCoordinateToPointCloudCoordinate-com.wikitude.common.util.Vector2-com.wikitude.tracker.InstantTracker.ScenePickingCallback-"><code>InstantTracker.convertScreenCoordinateToPointCloudCoordinate</code></a> will provide a 3d Point that is on the Plane when the hit ray intersects the plane.</p>
+<p><img src="images/androidnative_plane_screenshot.jpg" alt="Scene picking on two tracked planes, one horizontal and one vertical."></p>
+
+                <footer id="footer">
+                    &copy; 2012-2019 <a href="https://www.wikitude.com">Wikitude GmbH</a> · <a href="https://www.wikitude.com/imprint">Imprint</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            var storageKey = "androidnative" + "9.6.0";
+            function stateChanged(nodes, nodesJson) {
+                localStorage.setItem(storageKey, JSON.stringify(nodesJson));
+            }
+
+            function getData() {
+                var data = localStorage.getItem(storageKey);
+                if (data) return JSON.parse(data);
+            }
+
+            var easytree = $("#toc").easytree({
+                data: getData(),
+                stateChanged: stateChanged
+            });
+
+            $('.easytree-exp-e .easytree-title').each(function () {
+                let openItem = $(this).parent();
+                var openItemId = openItem.attr('id');
+                var activeChildItem = openItem.parent().find('ul li .easytree-active');
+
+                if (!activeChildItem.length) {
+                    easytree.toggleNode(openItemId);
+                }
+            });
+
+            var activeItem = $('.easytree-active.easytree-exp-c .easytree-title');
+
+            if (activeItem) {
+                var activeItemId = activeItem.closest('.easytree-active').attr('id');
+                easytree.toggleNode(activeItemId);
+            }
+            
+        });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // Every image referenced from a Markdown document
+        $("#content img").each(function() {
+            // Let's put a caption if there is one
+            if($(this).attr("alt"))
+                $(this).wrap('<figure class="image"></figure>')
+                    .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
+            });
+
+        //
+        document.getElementById("documentationSelect").onchange = function() {
+            var selectedOption = this.value;
+            var targetLink ="";
+            //console.log(selectedOption);
+            if(selectedOption !== ""){
+                if (selectedOption.startsWith("external"))
+                {
+                    targetLink = selectedOption.substring(9);
+                }
+                else
+                {
+                    targetLink = "https://www.wikitude.com/external/doc/documentation/latest/" + selectedOption;
+                }
+                
+                window.top.location.href = targetLink; 
+            }
+        };
+    });
+    </script>
+
+</body>
+    <script>
+    var lightbox = new Lightbox();
+    lightbox.load();
+    hljs.initHighlightingOnLoad();
+  </script>
+     <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNSZJ73"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</html>

@@ -1,0 +1,2385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikitude SDK Android Native API 9.6.0 Documentation </title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    
+    <link type="text/css" rel="stylesheet" href="css/merged.min.css">
+    
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/highlight-9.15.6.min.js"></script>
+    <script type="text/javascript" src="js/lunr.min-0.7.2.js"></script>
+    <script type="text/javascript" src="js/lightbox.min-0.5.1.js"></script>
+    <script type="text/javascript" src="js/jquery.easytree.js"></script>
+ 
+    <script type="text/plain" data-cookieconsent="statistics">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-11754809-8', 'auto');
+		ga('set', 'checkProtocolTask', null);
+		ga('send', 'pageview');
+    </script>   
+
+</head>
+<body>
+    <div id="page">
+        <a name="top" /></a>
+        <header>
+            <h1><a href="">Documentation</a></h1>
+        </header>
+        <nav id="page-tabs">
+            <div class="nav-link">
+                <a href="https://support.wikitude.com/support/home" class="">Forum</a>
+                <a href="https://support.wikitude.com/support/solutions" class="">FAQ</a>
+                <a href="https://www.wikitude.com/documentation" class="active">Documentation</a>
+                <a href="https://www.wikitude.com/download">Download</a>
+            </div>
+            <div class="nav-url">
+                <a href="https://www.wikitude.com/">www.wikitude.com</a>
+            </div>
+        </nav>
+         
+
+<div id="sidebar">
+
+    <div id="sidebarHeader">
+
+        
+        <select id="documentationSelect">
+            
+                <option value=""  > --- Android --- </option>
+            
+                <option value="android"  > Android Javascript API </option>
+            
+                <option value="androidnative"  selected > Android Native API </option>
+            
+                <option value=""  > --- iOS --- </option>
+            
+                <option value="ios"  > iOS Javascript API </option>
+            
+                <option value="iosnative"  > iOS Native API </option>
+            
+                <option value=""  > --- Windows --- </option>
+            
+                <option value="uwpnative"  > UWP Native API </option>
+            
+                <option value=""  > --- Unity --- </option>
+            
+                <option value="unity"  > Unity </option>
+            
+                <option value="hololens"  > HoloLens Unity </option>
+            
+                <option value=""  > --- Extensions --- </option>
+            
+                <option value="flutter"  > Flutter </option>
+            
+                <option value="phonegap"  > Cordova </option>
+            
+                <option value="xamarin"  > Xamarin </option>
+            
+                <option value=""  > --- Smart Glasses --- </option>
+            
+                <option value="epson"  > Epson </option>
+            
+                <option value="vuzix"  > Vuzix </option>
+            
+                <option value=""  > --- Services --- </option>
+            
+            
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio/" > Studio User Manual </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio-api/index.html" > Studio API </option>
+             
+            <option value="external:" > --- Expert Edition --- </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/expertedition/" > Expert Edition Unity </option>
+             
+        </select>
+
+        
+
+        <h2>Wikitude SDK Android Native API</h2>
+        <div>Professional Edition</div>
+        
+        <div id="version">version: 9.6.0</div>
+        
+        
+        <div id="api-type">Native API</div>
+        
+
+    </div>
+
+    <input id="showNav" class="toggleNav" type="checkbox">
+    <label class="showNavLbl" for="showNav">Show Navigation</label>
+    <label class="hideNavLbl" for="showNav">Hide Navigation</label>
+
+    <div id="mainnav">
+        <form action="search.html"><input id="search" type="text" placeholder="Search documentation" name="q" /></form>
+        <nav id="toc">
+            
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#getting-started">Getting started</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#introduction-to-the-wikitude-sdk">Introduction to the Wikitude SDK</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#recommended-usage-of-this-documentation">Recommended Usage of this Documentation</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#the-wikitude-native-sdk-augmented-reality-for-your-own-app">The Wikitude Native SDK - Augmented Reality for your own app</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#architecture-of-the-wikitude-sdk">Architecture of the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#the-wikitude-developer-portal">The Wikitude Developer Portal</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#feedback-and-contact">Feedback and Contact</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="requirementsandroidnative.html#requirements">Requirements</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="requirementsandroidnative.html#android-development">Android Development</a>
+            
+        </li>
+    
+        <li>
+            <a href="requirementsandroidnative.html#supported-android-devices">Supported Android Devices</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#project-setup">Project Setup</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="setupguideandroidnative.html#create-an-android-project">Create an Android project</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#adding-the-wikitude-sdk">Adding the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#add-permissions">Add permissions</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#trial-license-key-generation">Trial license key generation</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#wtc-file-generation">WTC file generation</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#license-key">License Key</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="triallicense.html#how-to-obtain-a-free-trial-license">How to obtain a free trial license</a>
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#where-should-i-enter-the-license-key">Where should I enter the license key</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="samplesnative.html#examples">Examples</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="samplesnative.html#wikitude-sdk-android-native-api-examples">Wikitude SDK Android Native API Examples</a>
+            
+        </li>
+    
+        <li>
+            <a href="samplesnative.html#setup">Setup</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#image-recognition">Image Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="imagerecognitionnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-recognition-range">Extended Recognition Range</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#simple-image-tracking-android">Simple Image Tracking Android</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#multiple-image-targets-tracking">Multiple Image Targets Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-image-tracking">Extended Image Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsimagerecognition.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-tracking">Instant Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#smart-seamless-ar-tracking">SMART - Seamless AR Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#basic-instant-tracking">Basic Instant Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-scene-picking">Instant Scene Picking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#persistent-instant-targets">Persistent Instant Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#save-instant-target">Save Instant Target</a>
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#load-instant-target">Load Instant Target</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#plane-detection-experimental">Plane Detection - Experimental</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#object-tracking">Object Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#introduction-to-object-and-scene-recognition">Introduction to Object and Scene Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#scene-recognition">Scene Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#simple-object-tracking">Simple Object Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#extended-object-tracking">Extended Object Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsobjectrecognition.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition">Cloud Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition-sample">Cloud Recognition Sample</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#on-click-cloud-recognition">On-Click Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#continuous-cloud-recognition">Continuous Cloud Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="renderingnative.html#rendering">Rendering</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="renderingnative.html#rendering-apis">Rendering APIs</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="renderingnative.html#external-rendering">External Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="renderingnative.html#internal-rendering">Internal Rendering</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#hardware-control">Hardware Control</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-settings">Camera Settings</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-position">Camera Position</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-focus-mode">Camera Focus Mode</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#manual-camera-focus">Manual Camera Focus</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera2-api-usage">Camera2 API usage</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-resolution">Camera Resolution</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-zoom">Camera Zoom</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#flashlight">Flashlight</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#focus-at-point-of-interest">Focus at point of interest</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#expose-at-point-of-interest">Expose at point of interest</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-controls">Camera Controls</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#plugins-api">Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapi.html#about-wikitude-sdk-plugins">About Wikitude SDK Plugins</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapi.html#plugin-base-class">Plugin Base Class</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#information-about-recognized-targets">Information about Recognized Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#platform-specifics">Platform Specifics</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#android-c-wikitude-plugin-library-build">Android C++ Wikitude Plugin Library Build</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#registering-plugins">Registering Plugins</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#barcode-and-qr-code-reader">Barcode and QR code reader</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#face-detection">Face Detection</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#input-plugins-api">Input Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="inputpluginsapi.html#about-wikitude-native-sdk-input-plugins">About Wikitude Native SDK Input Plugins</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#camera-frame-input-plugin-module-class">Camera Frame Input Plugin Module Class</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#camera-frame-input-plugin-module-implementation">Camera Frame Input Plugin Module Implementation</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#frame-metadata">Frame Metadata</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#frame-rendering">Frame Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#simple-input-plugin">Simple Input Plugin</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsplugins.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#target-management">Target Management</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets">Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#wikitude-studio">Wikitude Studio</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#use-projects-wtc-file-in-your-app">Use project's WTC file in your app</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets-for-cloud-recognition">Image Targets for Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#physical-height-for-image-targets">Physical Height for Image Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#object-targets">Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-based-conversion">Image-based conversion</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#best-practice-for-image-targets">Best practice for Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetguide.html#summary">Summary</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#optimal-image-dimensions">Optimal Image Dimensions</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#low-contrast-images">Low contrast images</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#distribution-of-textured-areas">Distribution of textured areas</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-whitespace">Images with whitespace</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#vector-based-graphics">Vector-based graphics</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-a-lot-of-text">Images with a lot of text</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#repetitive-patterns">Repetitive patterns</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#best-practice-for-object-targets">Best practice for Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttargetguide.html#characteristics-of-easily-trackable-objects">Characteristics of easily trackable objects</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#general-pieces-of-advice">General pieces of advice</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#image-based-conversion-best-practice">Image-based conversion - Best practice</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#targets-versioning">Targets Versioning</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetversioning.html#image-targets">Image Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#object-targets">Object Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="studio-api.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api-reference">Studio API Reference</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#api-reference">API Reference</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="reference.html#android-native-api-javadocs">Android Native API JavaDocs</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate">Migrate</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-to-93">Migrate to 9.3</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-891-to-810">Migrate from 8.9.1 to 8.10</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-832-to-84">Migrate from 8.3.2 to 8.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-80-to-81">Migrate from 8.0 to 8.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-72-to-80">Migrate from 7.2 to 8.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-71-to-72">Migrate from 7.1 to 7.2</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-70-to-71">Migrate from 7.0 to 7.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-21-to-70">Migrate from 2.1 to 7.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-201-to-21">Migrate from 2.0.1 to 2.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-14-to-20">Migrate from 1.4 to 2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-13-to-14">Migrate from 1.3 to 1.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-10-to-11">Migrate from 1.0 to 1.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#release-notes-wikitude-sdk-professional-edition">Release Notes Wikitude SDK Professional Edition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-960">Wikitude SDK 9.6.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-950">Wikitude SDK 9.5.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-940">Wikitude SDK 9.4.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-931">Wikitude SDK 9.3.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-93">Wikitude SDK 9.3</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-92">Wikitude SDK 9.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-910">Wikitude SDK 9.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-900">Wikitude SDK 9.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-8100">Wikitude SDK 8.10.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-891">Wikitude SDK 8.9.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-89">Wikitude SDK 8.9</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-87">Wikitude SDK 8.7</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-86">Wikitude SDK 8.6</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-85">Wikitude SDK 8.5</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-84">Wikitude SDK 8.4</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-832">Wikitude SDK 8.3.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-830">Wikitude SDK 8.3.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-820">Wikitude SDK 8.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-810">Wikitude SDK 8.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-800">Wikitude SDK 8.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-721">Wikitude SDK 7.2.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-720">Wikitude SDK 7.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-710">Wikitude SDK 7.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-700">Wikitude SDK 7.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-210">Wikitude SDK Native API 2.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-201">Wikitude SDK Native API 2.0.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-200">Wikitude SDK Native API 2.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-141">Wikitude SDK Native API 1.4.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-140">Wikitude SDK Native API 1.4.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-130">Wikitude SDK Native API 1.3.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-121">Wikitude SDK Native API 1.2.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-120">Wikitude SDK Native API 1.2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-110">Wikitude SDK Native API 1.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-100">Wikitude SDK Native API 1.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-100-beta">Wikitude SDK Native API 1.0.0 beta</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="license.html#license-terms">License Terms</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="license.html#terms-of-service-for-wikitudes-software-development-kit">Terms of Service for Wikitude's Software Development Kit</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="third-party-license.html#third-party-software-used">Third party software used</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+        </nav>
+        
+        <nav id="links">
+            <ul>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</div>
+        <div id="wrapper">
+            <div id="content">
+                <h2 id="input-plugins-api">Input Plugins API</h2>
+<p>This guide provides an introduction into the input plugins API of the Wikitude Native SDK and aims to familiarize the reader with its concepts and constraints. Due to the length and complexity of the corresponding example application source code, it will not be presented in its entirety. Relevant and descriptive source code examples will, however, be provided. Since the Input Plugins API is an extension to the Plugins API, we recommend familiarity with it prior to reading this guide.</p>
+<p><a id="about"></a></p>
+<h3 id="about-wikitude-native-sdk-input-plugins">About Wikitude Native SDK Input Plugins</h3>
+<p>The Input Plugins API provides a means to alter the inputs and outputs of the Wikitude Native SDK. For the input case specifically, custom frame data of arbitrary sources can be supplied as an input to the Wikitude Native SDK API for processing. Complementary, for the output case, the default rendering of the Wikitude Native SDK can be substituted with more advanced implementations.</p>
+<p>Input plugins can be registered before the SDK is started or while it is already running. In case it is registered before the Wikitude Native SDK is started, the internal Wikitude camera implementation is not started at all and the Wikitude Native SDK starts using the input plugin from the very beginning on.
+In case an input plugin is registered at runtime, the internal Wikitude Native SDK camera is first stopped, subsequently followed by a transition to the newly registered input plugin.</p>
+<p><a id="base_class"></a></p>
+<h3 id="camera-frame-input-plugin-module-class">Camera Frame Input Plugin Module Class</h3>
+<pre><code class="lang-c++">class CameraFrameInputPluginModule : public PluginModule {
+public:
+    CameraFrameInputPluginModule() noexcept = default;
+    virtual ~CameraFrameInputPluginModule() = default;
+
+    /**
+    * Override/implement this method to know when the default platform camera is fully released and this camera frame input plugin module can safely access all platform camera resources
+    */
+    virtual void onCameraReleased() = 0;
+    virtual void onCameraReleaseFailed(const sdk::Error&amp; error_) = 0;
+
+    /**
+    * Implement this method if this plugin module supports suspending camera frame updates while the surrounding SDK is still running.
+    * This would be the case if PlatformCameraModule::setEnabled(false) is called while WikitudeUniversalSDK::isRunning is true.
+    *
+    * In case PlatformCameraModule::setEnabled(true) is called, ::startCameraFrameUpdates() is called again.
+    *
+    * In case PlatformCameraModule::setEnabled(true) is called while WikitudeUniversalSDK::isRunning is false, it&#39;s up to subclasses of this to handle this state correctly
+    */
+    virtual void pauseCameraFrameUpdates();
+    virtual void resumeCameraFrameUpdates();
+
+    /**
+    * Implement this method if this plugin module supports camera focus mode changes.
+    */
+    virtual sdk::CallStatus setFocusMode(CameraFocusMode focusMode_);
+
+    /**
+    * Default: false
+    */
+    bool requestsCameraFrameRendering();
+
+    /* Called from the Wikitude SDK */
+    void registerOnPluginCameraReleasedHandler(std::function&lt;void()&gt; onPluginCameraReleasedHandler_);
+    void registerNotifyNewUnmanagedCameraFrameHandler(std::function&lt;void(const sdk::CameraFrame&amp; cameraFrame_)&gt; notifyNewUnmanagedCameraFrameHandler_);
+    void registerCameraToSurfaceAngleChangedHandler(std::function&lt;void(float cameraToSurfaceAngle_)&gt; cameraToSurfaceAngleChangedHandler_);
+    void registerOnPluginCameraErrorHandler(std::function&lt;void(const sdk::Error&amp; error_)&gt; onPluginCameraErrorHandler_);
+
+protected:
+    /**
+    * Call this method to notify a new camera frame to the SDK
+    */
+    void notifyNewUnmanagedCameraFrameToSDK(const sdk::CameraFrame&amp; cameraFrame_);
+
+    /**
+    * Call this method to notify the SDK that this camer frame input plugin module fully released all platform camera resources.
+    *
+    */
+    void notifyPluginCameraReleased();
+
+    void setCameraToSurfaceAngle(float cameraToSurfaceAngle_);
+
+    void onPluginCameraError(const sdk::Error&amp; error_);
+
+protected:
+    bool                                            _requestsCameraFrameRendering = false;
+    bool                                            _userDisabledCameraFrameUpdates = false;
+
+private:
+    std::function&lt;void()&gt;                           _onPluginCameraReleasedHandler;
+    std::function&lt;void(const sdk::CameraFrame&amp;)&gt;    _notifyNewUnmanagedCameraFrameHandler;
+    std::function&lt;void(float)&gt;                      _cameraToSurfaceAngleChangedHandler;
+    std::function&lt;void(const sdk::Error&amp;)&gt;          _onPluginCameraErrorHandler;
+};
+</code></pre>
+<p>An input plugin is simply a plugin that has a <code>CameraFrameInputPluginModule</code> associated with it. The module allows implementing the input related features.</p>
+<p><a id="base_class_implementation"></a></p>
+<h3 id="camera-frame-input-plugin-module-implementation">Camera Frame Input Plugin Module Implementation</h3>
+<p>The following code is a minimal example of how to create an input plugin and provide a camera frame to be rendered and processed. The code corresponds to the simple input plugin sample of the Wikitude Native SDK sample application.</p>
+<pre><code class="lang-c++">FrameInputPluginModule::FrameInputPluginModule(bool requestRendering_, std::function&lt;void()&gt; cameraReleaseHandler_)
+: _metadata(wikitude::sdk::ColorCameraFrameMetadata(-1, {640,480}, wikitude::sdk::CameraPosition::Back, wikitude::sdk::ColorSpace::YUV_420_888, 0))
+, _cameraReleaseHandler(cameraReleaseHandler_)
+, _frameId(-1)
+{
+    _requestsCameraFrameRendering = requestRendering_;
+}
+
+void FrameInputPluginModule::onCameraReleased() {
+    _cameraReleaseHandler();
+}
+
+void FrameInputPluginModule::onCameraReleaseFailed(const wikitude::sdk::Error&amp; error_) {
+
+}
+
+void FrameInputPluginModule::newCameraFrameAvailable(const wikitude::sdk::CameraFrame&amp; cameraFrame_) {
+
+}
+
+void FrameInputPluginModule::cameraReleased() {
+    CameraFrameInputPluginModule::notifyPluginCameraReleased();
+}
+
+void FrameInputPluginModule::cameraToSurfaceAngleChanged(float angle_){
+    CameraFrameInputPluginModule::setCameraToSurfaceAngle(angle_);
+}
+
+void FrameInputPluginModule::notifyNewCameraFrameYUV_420_888(const std::vector&lt;wikitude::sdk::CameraFramePlane&gt;&amp; planes_) {
+    notifyNewUnmanagedCameraFrameToSDK(wikitude::sdk::CameraFrame(++_frameId, 0, _metadata, planes_));
+}
+
+void FrameInputPluginModule::notifyNewCameraFrameNV21(const std::vector&lt;wikitude::sdk::CameraFramePlane&gt;&amp; planes_) {
+    if (_metadata.getFrameColorSpace() != wikitude::sdk::ColorSpace::YUV_420_NV21) {
+        _metadata = wikitude::sdk::ColorCameraFrameMetadata(_metadata.getHorizontalFieldOfView(), _metadata.getPixelSize(), _metadata.getCameraPosition(), wikitude::sdk::ColorSpace::YUV_420_NV21, _metadata.getTimestampTimescale());
+    }
+    notifyNewUnmanagedCameraFrameToSDK(wikitude::sdk::CameraFrame(++_frameId, 0, _metadata, planes_));
+}
+
+void FrameInputPluginModule::fieldOfViewChanged(float fov_) {
+    _metadata = wikitude::sdk::ColorCameraFrameMetadata(fov_, _metadata.getPixelSize(), _metadata.getCameraPosition(), _metadata.getFrameColorSpace(), _metadata.getTimestampTimescale());
+}
+
+extern &quot;C&quot; JNIEXPORT void JNICALL Java_com_wikitude_samples_plugins_FrameInputPluginModule_nativeNotifyNewCameraFrameYUV420888(JNIEnv* env_, jobject, jlong nativeHandle_, jobject luminanceData_, jobject chromaBlueData_, jobject chromaRedData_, jint rowStrideLuminance_, jint pixelStrideChroma_, jint rowStrideChroma_) {
+    auto module = reinterpret_cast&lt;FrameInputPluginModule*&gt;(nativeHandle_);
+    void* luminance = env_-&gt;GetDirectBufferAddress(luminanceData_);
+    void* chromaBlue = env_-&gt;GetDirectBufferAddress(chromaBlueData_);
+    void* chromaRed = env_-&gt;GetDirectBufferAddress(chromaRedData_);
+
+    unsigned int luminanceDataSize = static_cast&lt;unsigned int&gt;(env_-&gt;GetDirectBufferCapacity(luminanceData_));
+    unsigned int chromaBlueDataSize = static_cast&lt;unsigned int&gt;(env_-&gt;GetDirectBufferCapacity(chromaBlueData_));
+    unsigned int chromaRedDataSize = static_cast&lt;unsigned int&gt;(env_-&gt;GetDirectBufferCapacity(chromaRedData_));
+
+    std::vector&lt;wikitude::sdk::CameraFramePlane&gt; planes = {
+            wikitude::sdk::CameraFramePlane(luminance, luminanceDataSize, 1, rowStrideLuminance_),
+            wikitude::sdk::CameraFramePlane(chromaBlue, chromaBlueDataSize, pixelStrideChroma_, rowStrideChroma_),
+            wikitude::sdk::CameraFramePlane(chromaRed, chromaRedDataSize, pixelStrideChroma_, rowStrideChroma_)
+    };
+
+    module-&gt;notifyNewCameraFrameYUV_420_888(planes);
+}
+
+extern &quot;C&quot; JNIEXPORT void JNICALL Java_com_wikitude_samples_plugins_FrameInputPluginModule_nativeNotifyNewCameraFrameNV21(JNIEnv* env_, jobject, jlong nativeHandle_, jbyteArray data_) {
+    auto module = reinterpret_cast&lt;FrameInputPluginModule*&gt;(nativeHandle_);
+    jbyte* data = env_-&gt;GetByteArrayElements(data_, JNI_FALSE);
+    jsize dataLength = env_-&gt;GetArrayLength(data_);
+
+    std::vector&lt;wikitude::sdk::CameraFramePlane&gt; planes = {
+        wikitude::sdk::CameraFramePlane(data, static_cast&lt;unsigned int&gt;(dataLength))
+    };
+
+    module-&gt;notifyNewCameraFrameNV21(planes);
+    env_-&gt;ReleaseByteArrayElements(data_, data, JNI_ABORT);
+}
+
+extern &quot;C&quot; JNIEXPORT void JNICALL Java_com_wikitude_samples_plugins_FrameInputPluginModule_nativeFieldOfViewChanged(JNIEnv*, jobject, jlong nativeHandle_, jfloat fov_) {
+    auto module = reinterpret_cast&lt;FrameInputPluginModule*&gt;(nativeHandle_);
+    module-&gt;fieldOfViewChanged(fov_);
+}
+
+extern &quot;C&quot; JNIEXPORT void JNICALL Java_com_wikitude_samples_plugins_FrameInputPluginModule_nativeCameraToSurfaceAngleChanged(JNIEnv*, jobject, jlong nativeHandle_, jfloat angle_) {
+    auto module = reinterpret_cast&lt;FrameInputPluginModule*&gt;(nativeHandle_);
+    module-&gt;cameraToSurfaceAngleChanged(angle_);
+}
+
+extern &quot;C&quot; JNIEXPORT void JNICALL Java_com_wikitude_samples_plugins_FrameInputPluginModule_nativeCameraReleased(JNIEnv*, jobject, jlong nativeHandle_) {
+    auto module = reinterpret_cast&lt;FrameInputPluginModule*&gt;(nativeHandle_);
+    module-&gt;cameraReleased();
+}
+</code></pre>
+<p>The <code>_requestsCameraFrameRendering</code> flag is used to communicate whether the frame should be rendered by the SDK or not.</p>
+<p>The <code>onCameraReleased</code> and <code>onCameraReleaseFailed</code> function should be used to wait for the internal camera of the SDK to shut down before opening a new camera. This only applies if the input plugin is registered after the SDK has been started.</p>
+<p>The <code>notifyNewUnmanagedCameraFrameToSDK</code> function is used to pass a camera frame to the SDK for rendering and processing. The <code>CameraFrame</code> class encapsulates the frame data and the frame meta data.</p>
+<p>The <code>setCameraToSurfaceAngle</code> function is used to pass the rotation of the camera relative to the rotation of the render surface. This has to be set so that the SDK can render the camera frame correctly and provide correct matrices for tracking.</p>
+<p>After a camera frame has been acquired, in can be converted and forwarded using code akin to the following snippet.</p>
+<pre><code class="lang-c++">auto module = reinterpret_cast&lt;FrameInputPluginModule*&gt;(nativeHandle_);
+void* luminance = env_-&gt;GetDirectBufferAddress(luminanceData_);
+void* chromaBlue = env_-&gt;GetDirectBufferAddress(chromaBlueData_);
+void* chromaRed = env_-&gt;GetDirectBufferAddress(chromaRedData_);
+
+unsigned int luminanceDataSize = static_cast&lt;unsigned int&gt;(env_-&gt;GetDirectBufferCapacity(luminanceData_));
+unsigned int chromaBlueDataSize = static_cast&lt;unsigned int&gt;(env_-&gt;GetDirectBufferCapacity(chromaBlueData_));
+unsigned int chromaRedDataSize = static_cast&lt;unsigned int&gt;(env_-&gt;GetDirectBufferCapacity(chromaRedData_));
+
+std::vector&lt;wikitude::sdk::CameraFramePlane&gt; planes = {
+        wikitude::sdk::CameraFramePlane(luminance, luminanceDataSize, 1, rowStrideLuminance_),
+        wikitude::sdk::CameraFramePlane(chromaBlue, chromaBlueDataSize, pixelStrideChroma_, rowStrideChroma_),
+        wikitude::sdk::CameraFramePlane(chromaRed, chromaRedDataSize, pixelStrideChroma_, rowStrideChroma_)
+};
+
+module-&gt;notifyNewCameraFrameYUV_420_888(planes);
+</code></pre>
+<p>For a complete implementation of an input plugin for a specific and advanced use case, we strongly recommend looking into the custom camera example application source code. Additionally, the custom camera sample source code is an excellent starting point to build your own implementation from.</p>
+<p><a id="frame_metadata"></a></p>
+<h3 id="frame-metadata">Frame Metadata</h3>
+<p>As seen in the latter code snippet of the previous section, a camera frame is accompanied by a metadata object. This object is to be constructed as follows.</p>
+<p><a id="frame_metadata_field_of_view"></a></p>
+<h4 id="field-of-view">Field of View</h4>
+<p>The field of view parameter is a floating point value representing the horizontal view angle in degrees of the camera the provided frame was captured with. This value is required for the Wikitude computer vision engine to be able to accurately recognise and track targets within the provided frame. Note that the field of view value may significantly differ from device to device, we therefore recommend querying this value from the frame source directly to ensure representative values. For input image files and input video files this value should be discernible from the corresponding meta data; for an input camera stream this value should be accessible through the corresponding camera API.</p>
+<p><a id="frame_metadata_frame_size"></a></p>
+<h4 id="frame-size">Frame Size</h4>
+<p>The frame size parameter is of type <code>wikitude::sdk::Size&lt;int&gt;</code> and contains the input image width and input image height in pixels. Since this value will be constant for many use cases, you may consider hard-coding it to the appropriate values. Alternatively, as with the previous function, we recommend querying the values from either the input file or the input camera device.</p>
+<p><a id="frame_metadata_camera_position"></a></p>
+<h4 id="camera-position">Camera Position</h4>
+<p>Should the input plugin represent an image stream captured from one of the host device&#39;s cameras, the camera position parameter indicates which camera provides said image stream. It is an enumeration value which is defined in the <code>CameraPosition.hpp</code> header file. Currently valid values are <code>Back</code>, <code>Front</code> and <code>Unspecified</code>. This enumeration may, however, be extended should smartphone or smartglass technology evolve to include additional cameras.</p>
+<p><a id="frame_metadata_color_space"></a></p>
+<h4 id="color-space">Color Space</h4>
+<p>The color space parameter is of an enumeration type defined in the <code>ColorSpace.hpp</code> header. It indicates what format the supplied frame is encoded in. The enumeration includes several values for both RGB as well as YUV data and needs to be set appropriately. The <code>ColorSpace.hpp</code> header includes extensive comment on each of the enumeration value which is why additional details are omitted here. The interested reader is instead referred to the header file.</p>
+<p><a id="frame_metadata_timescale"></a></p>
+<h4 id="timescale">Timescale</h4>
+<p>The timescale parameter defines how the time values of the input frames are to be interpreted. It is an integer value that is used as the denominator in the following equation to determine the time in seconds: <code>seconds = timeval / timescale</code>. The timescale will likely correspond to an reciprocal SI prefix, e.g. <code>1</code> for identity, <code>10^3</code> for milli, <code>10^6</code> for micro, <code>10^9</code> for nano and so forth.</p>
+<p><a id="frame_rendering"></a></p>
+<h3 id="frame-rendering">Frame Rendering</h3>
+<p>To indicate that you would like the input frame rendered by the Wikitude Native SDK, simply set the <code>_requestsCameraFrameRendering</code> field of the <code>CameraFrameInputPluginModule</code> base class to <code>true</code>. Should you prefer to do your own rendering and simply submit the input frame for processing, set it to <code>false</code> instead.</p>
+<p>For the latter case, you need to implement at least one rendering plugin module that performs the rendering of the camera frame. Each rendering API to be supported requires its own rendering module. In each of these modules the camera frame data is to be acquired and subsequently rendered. While custom camera frame rendering can be tricky to get correct, it allows effects to be added that the SDK does not support out of the box.</p>
+<pre><code>void OpenGLESScanningEffectRenderingPluginModule::startRender(wikitude::sdk::RenderableCameraFrameBucket&amp; frameBucket_) {
+    long processedFrameId_ = _trackingParameters.getProcessedFrameId();
+    frameBucket_.getRenderableCameraFrameForId(processedFrameId_, [this](wikitude::sdk::RenderableCameraFrame&amp; frame_) {
+        render(frame_);
+    }, [](wikitude::sdk::Error&amp; error_) {
+        std::cout &lt;&lt; error_;
+    });
+}
+</code></pre><p><a id="frame_rendering_considerations"></a></p>
+<h4 id="rendering-considerations">Rendering Considerations</h4>
+<p>While rendering of a camera frame appears to be a trivial task, it can be quite intricate to get right. Since the aspect ratio of the camera frame does not necessarily match the aspect ratio of the display, especially so considering the four different device orientations, transformations need to be adjusted accordingly. The following snippets showcase how to acquire the necessary data and hint at how to apply them. For a complete implementation the reader is referred to the actual sample code which demonstrates the entirety of the process.</p>
+<p>The plugin registers to be notified when changes in the data occur. The <code>cameraToSurfaceAngle</code> is an integer rotation value in degrees between the camera frame and the rendering surface. The <code>cameraToSurfaceScaling</code> is a two component floating point scale value (in X and Y) between the camera frame and the rendering surface. These values change upon device orientation change.</p>
+<pre><code>wikitude::sdk::RuntimeParameters&amp; runtimeParameters = pluginParameterCollection_.getRuntimeParameters();
+
+runtimeParameters.addCameraToSurfaceAngleChangedHandler(reinterpret_cast&lt;std::uintptr_t&gt;(this), [&amp;](float cameraToSurfaceAngle_) {
+    static_cast&lt;OpenGLESScanningEffectRenderingPluginModule*&gt;(getOpenGLESRenderingPluginModule())-&gt;cameraToSurfaceAngleChanged(cameraToSurfaceAngle_);
+});
+
+runtimeParameters.addCameraToSurfaceScalingChangedHandler(reinterpret_cast&lt;std::uintptr_t&gt;(this), [&amp;](wikitude::sdk::Scale2D&lt;float&gt; cameraToSurfaceScaling_) {
+    static_cast&lt;OpenGLESScanningEffectRenderingPluginModule*&gt;(getOpenGLESRenderingPluginModule())-&gt;cameraToSurfaceScalingChanged(cameraToSurfaceScaling_);
+});
+</code></pre><p>The module has its changed handlers called and updates its internal transformations accordingly. Since these updates are asynchronous in nature, synchronization is required within the handlers as well as the rendering loop that uses it.</p>
+<pre><code>void OpenGLESScanningEffectRenderingPluginModule::cameraToSurfaceAngleChanged(float cameraToSurfaceAngle_) {
+    _cameraToSurfaceAngle = cameraToSurfaceAngle_;
+
+    std::lock_guard&lt;std::mutex&gt; l(_surfaceInitializedMutex);
+
+    _cameraToSurfaceAngleInitialized = true;
+
+    if (_cameraToSurfaceScalingInitialized) {
+        _surfaceInitialized = true;
+
+        updateMatrices();
+    }
+}
+
+void OpenGLESScanningEffectRenderingPluginModule::cameraToSurfaceScalingChanged(wikitude::sdk::Scale2D&lt;float&gt; cameraToSurfaceScaling_) {
+    _cameraToSurfaceScaling = cameraToSurfaceScaling_;
+
+    std::lock_guard&lt;std::mutex&gt; l(_surfaceInitializedMutex);
+
+    _cameraToSurfaceScalingInitialized = true;
+
+    if (_cameraToSurfaceAngleInitialized) {
+        _surfaceInitialized = true;
+
+        updateMatrices();
+    }
+}
+</code></pre><p><a id="simple_input_plugin"></a></p>
+<h3 id="simple-input-plugin">Simple Input Plugin</h3>
+<p>This sample shows the implementation of a custom camera whose frames are rendered by the Wikitude Native SDK.
+The Simple Input Plugin Example consists of the C++ class <code>SimpleInputPlugin</code> and the Java classes <code>SimpleInputPluginExtension</code>, <code>WikitudeCamera</code> and <code>WikitudeCamera2</code>.
+Both WikitudeCamera classes contain a basic implementation of the android camera API.
+The class <code>SimpleInputPluginExtension</code> registers the plugin in the SDK and handles the view. The class <code>SimpleInputPlugin</code> derives from <code>InputPlugin</code>.</p>
+<p>In <code>onCreate</code> of the <code>SimpleInputPluginActivity</code> the C++ Plugin(<code>SimpleInputPlugin</code>) is registered to the SDK by using <a href="../Reference/Android%20Native%20SDK%20API/com/wikitude/common/plugins/PluginManager.html#registerNativePlugins-java.lang.String-java.lang.String-com.wikitude.common.ErrorCallback-"><code>PluginManager.registerNativePlugins</code></a>.</p>
+<p>With <a href="#simple_input_plugin_initialize_native"><code>initNative</code></a> we pass the <code>SimpleInputPluginActivity</code> to the <code>SimpleInputPlugin</code> which is then used to call <code>SimpleInputPluginActivity</code> methods from C++.</p>
+<pre><code>protected void onCreate(Bundle savedInstanceState) {
+
+    // creation of WikitudeSDK and trackers
+
+    // register Plugin in the wikitude SDK and in the jniRegistration.cpp
+    mWikitudeSDK.getPluginManager().registerNativePlugins(&quot;wikitudePlugins&quot;, &quot;simple_input_plugin&quot;, new ErrorCallback() {
+        @Override
+        public void onError(WikitudeError error) {
+            Log.v(TAG, &quot;Plugin failed to load. Reason: &quot; + error.getMessage());
+        }
+    });
+
+    // sets this activity in the plugin
+    initNative();
+}
+</code></pre><p>The pointer to the <code>SimpleInputPluginActivity</code> is passed to the <code>SimpleInputPlugin</code>.</p>
+<pre><code>extern &quot;C&quot; JNIEXPORT void JNICALL
+Java_com_wikitude_samples_plugins_SimpleInputPluginActivity_initNative(JNIEnv* env, jobject obj) {
+    env-&gt;GetJavaVM(&amp;pluginJavaVM);
+    simpleInputPluginActivity = env-&gt;NewGlobalRef(obj);
+}
+</code></pre><p>The camera frame input plugin module, as any other plugin module, has to be registered. For the camera frame input plugin module this is done by using the <code>setCameraFrameInputPluginModule</code> method of the plugin base class in the constructor of the <code>SimpleInputPlugin</code>. It takes a <code>unique_ptr</code> to the camera frame input plugin module as its input parameter.</p>
+<pre><code>SimpleInputPlugin::SimpleInputPlugin() :
+        Plugin(&quot;plugin.input.yuv.simple&quot;){
+    SimpleInputPlugin::instance = this;
+
+    setCameraFrameInputPluginModule(std::make_unique&lt;FrameInputPluginModule&gt;(true /*reguest rendering*/, [&amp;]{
+        callInitializedJNIMethod(_sdkCameraReleasedMethodId);
+    }));
+}
+</code></pre><p>When the <code>initialize</code> method is called the equivalent methods of the <code>SampleInputPluginActivity</code> for the Plugin lifecycle are stored. After that the C++ -&gt; Java connection is fully established.</p>
+<pre><code>/**
+ * Will be called once after your Plugin was successfully added to the Wikitude Engine. Initialize your plugin here.
+ */
+void SimpleInputPlugin::initialize(const std::string&amp; temporaryDirectory_, wikitude::sdk::PluginParameterCollection&amp; pluginParameterCollection_) {
+    JavaVMResource vm(pluginJavaVM);
+    jclass simpleInputPluginActivityClass = vm.env-&gt;GetObjectClass(simpleInputPluginActivity);
+    _pluginInitializedMethodId = vm.env-&gt;GetMethodID(simpleInputPluginActivityClass, &quot;onInputPluginInitialized&quot;, &quot;()V&quot;);
+    _sdkCameraReleasedMethodId = vm.env-&gt;GetMethodID(simpleInputPluginActivityClass, &quot;onSDKCameraReleased&quot;, &quot;()V&quot;);
+    _pluginPausedMethodId = vm.env-&gt;GetMethodID(simpleInputPluginActivityClass, &quot;onInputPluginPaused&quot;, &quot;()V&quot;);
+    _pluginResumedMethodId = vm.env-&gt;GetMethodID(simpleInputPluginActivityClass, &quot;onInputPluginResumed&quot;, &quot;()V&quot;);
+    _pluginDestroyedMethodId = vm.env-&gt;GetMethodID(simpleInputPluginActivityClass, &quot;onInputPluginDestroyed&quot;, &quot;()V&quot;);
+
+
+    callInitializedJNIMethod(_pluginInitializedMethodId);
+}
+</code></pre><p>The Plugin lifecycle methods:</p>
+<pre><code>void SimpleInputPlugin::pause() {
+    callInitializedJNIMethod(_pluginPausedMethodId);
+}
+
+void SimpleInputPlugin::resume(unsigned int pausedTime_) {
+    callInitializedJNIMethod(_pluginResumedMethodId);
+}
+
+void SimpleInputPlugin::destroy() {
+    callInitializedJNIMethod(_pluginDestroyedMethodId);
+}
+</code></pre>
+                <footer id="footer">
+                    &copy; 2012-2019 <a href="https://www.wikitude.com">Wikitude GmbH</a> · <a href="https://www.wikitude.com/imprint">Imprint</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            var storageKey = "androidnative" + "9.6.0";
+            function stateChanged(nodes, nodesJson) {
+                localStorage.setItem(storageKey, JSON.stringify(nodesJson));
+            }
+
+            function getData() {
+                var data = localStorage.getItem(storageKey);
+                if (data) return JSON.parse(data);
+            }
+
+            var easytree = $("#toc").easytree({
+                data: getData(),
+                stateChanged: stateChanged
+            });
+
+            $('.easytree-exp-e .easytree-title').each(function () {
+                let openItem = $(this).parent();
+                var openItemId = openItem.attr('id');
+                var activeChildItem = openItem.parent().find('ul li .easytree-active');
+
+                if (!activeChildItem.length) {
+                    easytree.toggleNode(openItemId);
+                }
+            });
+
+            var activeItem = $('.easytree-active.easytree-exp-c .easytree-title');
+
+            if (activeItem) {
+                var activeItemId = activeItem.closest('.easytree-active').attr('id');
+                easytree.toggleNode(activeItemId);
+            }
+            
+        });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // Every image referenced from a Markdown document
+        $("#content img").each(function() {
+            // Let's put a caption if there is one
+            if($(this).attr("alt"))
+                $(this).wrap('<figure class="image"></figure>')
+                    .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
+            });
+
+        //
+        document.getElementById("documentationSelect").onchange = function() {
+            var selectedOption = this.value;
+            var targetLink ="";
+            //console.log(selectedOption);
+            if(selectedOption !== ""){
+                if (selectedOption.startsWith("external"))
+                {
+                    targetLink = selectedOption.substring(9);
+                }
+                else
+                {
+                    targetLink = "https://www.wikitude.com/external/doc/documentation/latest/" + selectedOption;
+                }
+                
+                window.top.location.href = targetLink; 
+            }
+        };
+    });
+    </script>
+
+</body>
+    <script>
+    var lightbox = new Lightbox();
+    lightbox.load();
+    hljs.initHighlightingOnLoad();
+  </script>
+     <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNSZJ73"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</html>

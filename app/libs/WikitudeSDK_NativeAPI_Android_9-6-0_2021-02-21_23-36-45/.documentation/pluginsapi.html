@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikitude SDK Android Native API 9.6.0 Documentation </title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    
+    <link type="text/css" rel="stylesheet" href="css/merged.min.css">
+    
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/highlight-9.15.6.min.js"></script>
+    <script type="text/javascript" src="js/lunr.min-0.7.2.js"></script>
+    <script type="text/javascript" src="js/lightbox.min-0.5.1.js"></script>
+    <script type="text/javascript" src="js/jquery.easytree.js"></script>
+ 
+    <script type="text/plain" data-cookieconsent="statistics">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-11754809-8', 'auto');
+		ga('set', 'checkProtocolTask', null);
+		ga('send', 'pageview');
+    </script>   
+
+</head>
+<body>
+    <div id="page">
+        <a name="top" /></a>
+        <header>
+            <h1><a href="">Documentation</a></h1>
+        </header>
+        <nav id="page-tabs">
+            <div class="nav-link">
+                <a href="https://support.wikitude.com/support/home" class="">Forum</a>
+                <a href="https://support.wikitude.com/support/solutions" class="">FAQ</a>
+                <a href="https://www.wikitude.com/documentation" class="active">Documentation</a>
+                <a href="https://www.wikitude.com/download">Download</a>
+            </div>
+            <div class="nav-url">
+                <a href="https://www.wikitude.com/">www.wikitude.com</a>
+            </div>
+        </nav>
+         
+
+<div id="sidebar">
+
+    <div id="sidebarHeader">
+
+        
+        <select id="documentationSelect">
+            
+                <option value=""  > --- Android --- </option>
+            
+                <option value="android"  > Android Javascript API </option>
+            
+                <option value="androidnative"  selected > Android Native API </option>
+            
+                <option value=""  > --- iOS --- </option>
+            
+                <option value="ios"  > iOS Javascript API </option>
+            
+                <option value="iosnative"  > iOS Native API </option>
+            
+                <option value=""  > --- Windows --- </option>
+            
+                <option value="uwpnative"  > UWP Native API </option>
+            
+                <option value=""  > --- Unity --- </option>
+            
+                <option value="unity"  > Unity </option>
+            
+                <option value="hololens"  > HoloLens Unity </option>
+            
+                <option value=""  > --- Extensions --- </option>
+            
+                <option value="flutter"  > Flutter </option>
+            
+                <option value="phonegap"  > Cordova </option>
+            
+                <option value="xamarin"  > Xamarin </option>
+            
+                <option value=""  > --- Smart Glasses --- </option>
+            
+                <option value="epson"  > Epson </option>
+            
+                <option value="vuzix"  > Vuzix </option>
+            
+                <option value=""  > --- Services --- </option>
+            
+            
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio/" > Studio User Manual </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio-api/index.html" > Studio API </option>
+             
+            <option value="external:" > --- Expert Edition --- </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/expertedition/" > Expert Edition Unity </option>
+             
+        </select>
+
+        
+
+        <h2>Wikitude SDK Android Native API</h2>
+        <div>Professional Edition</div>
+        
+        <div id="version">version: 9.6.0</div>
+        
+        
+        <div id="api-type">Native API</div>
+        
+
+    </div>
+
+    <input id="showNav" class="toggleNav" type="checkbox">
+    <label class="showNavLbl" for="showNav">Show Navigation</label>
+    <label class="hideNavLbl" for="showNav">Hide Navigation</label>
+
+    <div id="mainnav">
+        <form action="search.html"><input id="search" type="text" placeholder="Search documentation" name="q" /></form>
+        <nav id="toc">
+            
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#getting-started">Getting started</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#introduction-to-the-wikitude-sdk">Introduction to the Wikitude SDK</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#recommended-usage-of-this-documentation">Recommended Usage of this Documentation</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#the-wikitude-native-sdk-augmented-reality-for-your-own-app">The Wikitude Native SDK - Augmented Reality for your own app</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#architecture-of-the-wikitude-sdk">Architecture of the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#the-wikitude-developer-portal">The Wikitude Developer Portal</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedandroidnative.html#feedback-and-contact">Feedback and Contact</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="requirementsandroidnative.html#requirements">Requirements</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="requirementsandroidnative.html#android-development">Android Development</a>
+            
+        </li>
+    
+        <li>
+            <a href="requirementsandroidnative.html#supported-android-devices">Supported Android Devices</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#project-setup">Project Setup</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="setupguideandroidnative.html#create-an-android-project">Create an Android project</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#adding-the-wikitude-sdk">Adding the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#add-permissions">Add permissions</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#trial-license-key-generation">Trial license key generation</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideandroidnative.html#wtc-file-generation">WTC file generation</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#license-key">License Key</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="triallicense.html#how-to-obtain-a-free-trial-license">How to obtain a free trial license</a>
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#where-should-i-enter-the-license-key">Where should I enter the license key</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="samplesnative.html#examples">Examples</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="samplesnative.html#wikitude-sdk-android-native-api-examples">Wikitude SDK Android Native API Examples</a>
+            
+        </li>
+    
+        <li>
+            <a href="samplesnative.html#setup">Setup</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#image-recognition">Image Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="imagerecognitionnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-recognition-range">Extended Recognition Range</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#simple-image-tracking-android">Simple Image Tracking Android</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#multiple-image-targets-tracking">Multiple Image Targets Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-image-tracking">Extended Image Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsimagerecognition.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-tracking">Instant Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#smart-seamless-ar-tracking">SMART - Seamless AR Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#basic-instant-tracking">Basic Instant Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-scene-picking">Instant Scene Picking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#persistent-instant-targets">Persistent Instant Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#save-instant-target">Save Instant Target</a>
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#load-instant-target">Load Instant Target</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#plane-detection-experimental">Plane Detection - Experimental</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#object-tracking">Object Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#introduction-to-object-and-scene-recognition">Introduction to Object and Scene Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#scene-recognition">Scene Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#simple-object-tracking">Simple Object Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#extended-object-tracking">Extended Object Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsobjectrecognition.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition">Cloud Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition-sample">Cloud Recognition Sample</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#on-click-cloud-recognition">On-Click Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#continuous-cloud-recognition">Continuous Cloud Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="renderingnative.html#rendering">Rendering</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="renderingnative.html#rendering-apis">Rendering APIs</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="renderingnative.html#external-rendering">External Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="renderingnative.html#internal-rendering">Internal Rendering</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#hardware-control">Hardware Control</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-settings">Camera Settings</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-position">Camera Position</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-focus-mode">Camera Focus Mode</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#manual-camera-focus">Manual Camera Focus</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera2-api-usage">Camera2 API usage</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-resolution">Camera Resolution</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-zoom">Camera Zoom</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#flashlight">Flashlight</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#focus-at-point-of-interest">Focus at point of interest</a>
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#expose-at-point-of-interest">Expose at point of interest</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="hardwarecontrolnative.html#camera-controls">Camera Controls</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#plugins-api">Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapi.html#about-wikitude-sdk-plugins">About Wikitude SDK Plugins</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapi.html#plugin-base-class">Plugin Base Class</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#information-about-recognized-targets">Information about Recognized Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#platform-specifics">Platform Specifics</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#android-c-wikitude-plugin-library-build">Android C++ Wikitude Plugin Library Build</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#registering-plugins">Registering Plugins</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#barcode-and-qr-code-reader">Barcode and QR code reader</a>
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapi.html#face-detection">Face Detection</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#input-plugins-api">Input Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="inputpluginsapi.html#about-wikitude-native-sdk-input-plugins">About Wikitude Native SDK Input Plugins</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#camera-frame-input-plugin-module-class">Camera Frame Input Plugin Module Class</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#camera-frame-input-plugin-module-implementation">Camera Frame Input Plugin Module Implementation</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#frame-metadata">Frame Metadata</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#frame-rendering">Frame Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapi.html#simple-input-plugin">Simple Input Plugin</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetsplugins.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#target-management">Target Management</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets">Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#wikitude-studio">Wikitude Studio</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#use-projects-wtc-file-in-your-app">Use project's WTC file in your app</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets-for-cloud-recognition">Image Targets for Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#physical-height-for-image-targets">Physical Height for Image Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#object-targets">Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-based-conversion">Image-based conversion</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#best-practice-for-image-targets">Best practice for Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetguide.html#summary">Summary</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#optimal-image-dimensions">Optimal Image Dimensions</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#low-contrast-images">Low contrast images</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#distribution-of-textured-areas">Distribution of textured areas</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-whitespace">Images with whitespace</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#vector-based-graphics">Vector-based graphics</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-a-lot-of-text">Images with a lot of text</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#repetitive-patterns">Repetitive patterns</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#best-practice-for-object-targets">Best practice for Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttargetguide.html#characteristics-of-easily-trackable-objects">Characteristics of easily trackable objects</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#general-pieces-of-advice">General pieces of advice</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#image-based-conversion-best-practice">Image-based conversion - Best practice</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#targets-versioning">Targets Versioning</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetversioning.html#image-targets">Image Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#object-targets">Object Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="studio-api.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api-reference">Studio API Reference</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#api-reference">API Reference</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="reference.html#android-native-api-javadocs">Android Native API JavaDocs</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate">Migrate</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-to-93">Migrate to 9.3</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-891-to-810">Migrate from 8.9.1 to 8.10</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-832-to-84">Migrate from 8.3.2 to 8.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-80-to-81">Migrate from 8.0 to 8.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-72-to-80">Migrate from 7.2 to 8.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-71-to-72">Migrate from 7.1 to 7.2</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-70-to-71">Migrate from 7.0 to 7.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-21-to-70">Migrate from 2.1 to 7.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-201-to-21">Migrate from 2.0.1 to 2.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-14-to-20">Migrate from 1.4 to 2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-13-to-14">Migrate from 1.3 to 1.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-androidnative.html#migrate-from-10-to-11">Migrate from 1.0 to 1.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#release-notes-wikitude-sdk-professional-edition">Release Notes Wikitude SDK Professional Edition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-960">Wikitude SDK 9.6.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-950">Wikitude SDK 9.5.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-940">Wikitude SDK 9.4.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-931">Wikitude SDK 9.3.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-93">Wikitude SDK 9.3</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-92">Wikitude SDK 9.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-910">Wikitude SDK 9.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-900">Wikitude SDK 9.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-8100">Wikitude SDK 8.10.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-891">Wikitude SDK 8.9.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-89">Wikitude SDK 8.9</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-87">Wikitude SDK 8.7</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-86">Wikitude SDK 8.6</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-85">Wikitude SDK 8.5</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-84">Wikitude SDK 8.4</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-832">Wikitude SDK 8.3.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-830">Wikitude SDK 8.3.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-820">Wikitude SDK 8.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-810">Wikitude SDK 8.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-800">Wikitude SDK 8.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-721">Wikitude SDK 7.2.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-720">Wikitude SDK 7.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-710">Wikitude SDK 7.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-700">Wikitude SDK 7.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-210">Wikitude SDK Native API 2.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-201">Wikitude SDK Native API 2.0.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-200">Wikitude SDK Native API 2.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-141">Wikitude SDK Native API 1.4.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-140">Wikitude SDK Native API 1.4.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-130">Wikitude SDK Native API 1.3.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-121">Wikitude SDK Native API 1.2.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-120">Wikitude SDK Native API 1.2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-110">Wikitude SDK Native API 1.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-100">Wikitude SDK Native API 1.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-native-api-100-beta">Wikitude SDK Native API 1.0.0 beta</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="license.html#license-terms">License Terms</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="license.html#terms-of-service-for-wikitudes-software-development-kit">Terms of Service for Wikitude's Software Development Kit</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="third-party-license.html#third-party-software-used">Third party software used</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+        </nav>
+        
+        <nav id="links">
+            <ul>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</div>
+        <div id="wrapper">
+            <div id="content">
+                <h1 id="plugins-api">Plugins API</h1>
+<p>This guide consists of multiple sections, first we discuss Wikitude SDK Plugins in general, than we talk about platform specifics and how to register a plugin with the Wikitude SDK and then we go through each of the sample plugins included with the Wikitude Example Applications.</p>
+<p><a id="about"></a></p>
+<h2 id="about-wikitude-sdk-plugins">About Wikitude SDK Plugins</h2>
+<p>A plugin is a class, or rather a set of classes, written in C++ that allows extending the functionality of the Wikitude SDK. While there is a <code>Plugin</code> base class that offers some of the main functionality, a plugin itself can have multiple different optional modules that allow for more complex concepts to be implemented. The following table gives a very brief overview of the distribution of responsibilities of the plugin related classes.</p>
+<table>
+<thead>
+<tr>
+<th>class</th>
+<th>purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Plugin</code></td>
+<td>Main class of a plugin implementation. Derive from this class to create your plugin. It handles the application lifecycle and main plugin functionality. It provides access to various parameters of the Wikitude SDK and provides access to the camera frame and the recognized targets. It further owns and manages all the optional plugin modules.</td>
+</tr>
+<tr>
+<td><code>ImageTrackingPluginModule</code></td>
+<td>Optional module to allow for custom image tracking implementations. Derive from this class to implement your own image tracking algorithm to work in conjunction with the Wikitude SDK algorithms.</td>
+</tr>
+<tr>
+<td><code>InstantTrackingPluginModule</code></td>
+<td>Optional module to allow for custom instant tracking implementations. Derive from this class to implement your own instant tracking algorithm to work in conjunction with the Wikitude SDK algorithms.</td>
+</tr>
+<tr>
+<td><code>ObjectTrackingPluginModule</code></td>
+<td>Optional module to allow for custom object tracking implementations. Derive from this class to implement your own object tracking algorithm to work in conjunction with the Wikitude SDK algorithms.</td>
+</tr>
+<tr>
+<td><code>CameraFrameInputPluginModule</code></td>
+<td>Optional module to allow for frame data to be input into the Wikitude SDK. Derive from this class to implement your own camera frame acquisition. The supplied frame data supplied can be processed and rendered by the Wikitude SDK.</td>
+</tr>
+<tr>
+<td><code>DeviceIMUInputPluginModule</code></td>
+<td>Optional module to allow for sensor data to be input into the Wikitude SDK. Derive from this class to implement your own sensor data acquisition. The supplied sensor data supplied will be used by the Wikitude SDK for its tracking algorithms where applicable.</td>
+</tr>
+<tr>
+<td><code>OpenGLESRenderingPluginModule</code></td>
+<td>Optional module to allow for custom OpenGL ES rendering. Available on iOS and Android.</td>
+</tr>
+<tr>
+<td><code>MetalRenderingPluginModule</code></td>
+<td>Optional module to allow for custom Metal rendering. Only available on iOS.</td>
+</tr>
+<tr>
+<td><code>DirectXRenderingPluginModule</code></td>
+<td>Optional module to allow for custom DirectX rendering. Only available on Windows.</td>
+</tr>
+</tbody>
+</table>
+<p>Each of the optional modules can be registered by calling the corresponding function of the <code>Plugin</code> class.</p>
+<p>An important thing to remember when working with plugins is that they need to have a unique identifier. If an attempt is made to register a plugin with an identifier that is already known to the Wikitude SDK, the register method call will return false.</p>
+<h3 id="plugin-base-class">Plugin Base Class</h3>
+<pre><code>class Plugin {
+public:
+    Plugin(std::string identifier_);
+    virtual ~Plugin();
+
+    virtual void initialize(const std::string&amp; temporaryDirectory_, PluginParameterCollection&amp; pluginParameterCollection_);
+    virtual void setSDKEdition(SDKEdition sdkEdition_);
+    virtual void pause();
+    virtual void resume(unsigned int pausedTime_);
+    virtual void destroy();
+
+    virtual void cameraFrameAvailable(common_code::ManagedCameraFrame&amp; managedCameraFrame_) = 0;
+    virtual void deviceRotationEventAvailable(const DeviceRotationEvent&amp; deviceRotationEvent_);
+    virtual void deviceOrientationEventAvailable(const DeviceOrientationEvent&amp; deviceOrientationEvent_);
+    virtual void prepareUpdate();
+    virtual void update(const RecognizedTargetsBucket&amp; recognizedTargetsBucket_) = 0;
+
+    virtual const std::string&amp; getIdentifier() const;
+
+    virtual void setEnabled(bool enabled_);
+    virtual bool isEnabled() const;
+
+    virtual PluginType getPluginType() const;
+
+    virtual bool canPerformTrackingOperationsAlongOtherPlugins();
+    virtual bool canUpdateMultipleTrackingInterfacesSimultaneously();
+
+    ImageTrackingPluginModule* getImageTrackingPluginModule() const;
+    InstantTrackingPluginModule* getInstantTrackingPluginModule() const;
+    ObjectTrackingPluginModule* getObjectTrackingPluginModule() const;
+
+    CameraFrameInputPluginModule* getCameraFrameInputPluginModule() const;
+    DeviceIMUInputPluginModule* getDeviceIMUInpputPluginModule() const;
+
+    OpenGLESRenderingPluginModule* getOpenGLESRenderingPluginModule() const;
+    MetalRenderingPluginModule* getMetalRenderingPluginModule() const;
+    DirectXRenderingPluginModule* getDirectXRenderingPluginModule() const;
+
+protected:
+    void setImageTrackingPluginModule(std::unique_ptr&lt;ImageTrackingPluginModule&gt; imageTrackingPluginModule_);
+    void setObjectTrackingPluginModule(std::unique_ptr&lt;ObjectTrackingPluginModule&gt; objectTrackingPluginModule_);
+    void setInstantTrackingPluginModule(std::unique_ptr&lt;InstantTrackingPluginModule&gt; instantTrackingPluginModule_);
+
+    void setCameraFrameInputPluginModule(std::unique_ptr&lt;CameraFrameInputPluginModule&gt; cameraFrameInputPluginModule_);
+    void setDeviceIMUInputPluginModule(std::unique_ptr&lt;DeviceIMUInputPluginModule&gt; deviceIMUInputPluginModule_);
+
+    void setOpenGLESRenderingPluginModule(std::unique_ptr&lt;OpenGLESRenderingPluginModule&gt; openGLESRenderingPluginModule_);
+    void setMetalRenderingPluginModule(std::unique_ptr&lt;MetalRenderingPluginModule&gt; metalRenderingPluginModule_);
+    void setDirectXRenderingPluginModule(std::unique_ptr&lt;DirectXRenderingPluginModule&gt; directXRenderingPluginModule_);
+
+    void iterateEnabledPluginModules(std::function&lt;void(PluginModule&amp; activePluginModule_)&gt; activePluginModuleIteratorHandle_);
+
+protected:
+    std::string     _identifier;
+    bool            _enabled;
+
+    mutable std::mutex          _pluginModuleAccessMutex;
+    std::set&lt;PluginModule*&gt;     _availablePluginModules;
+
+private:
+    std::unique_ptr&lt;ImageTrackingPluginModule&gt; _imageTrackingModule;
+    std::unique_ptr&lt;InstantTrackingPluginModule&gt; _instantTrackingModule;
+    std::unique_ptr&lt;ObjectTrackingPluginModule&gt; _objectTrackingModule;
+
+    std::unique_ptr&lt;CameraFrameInputPluginModule&gt;   _cameraFrameInputModule;
+    std::unique_ptr&lt;DeviceIMUInputPluginModule&gt;     _deviceIMUInputPluginModule;
+
+    std::unique_ptr&lt;OpenGLESRenderingPluginModule&gt; _openGlesRenderingModule;
+    std::unique_ptr&lt;MetalRenderingPluginModule&gt; _metalRenderingModule;
+    std::unique_ptr&lt;DirectXRenderingPluginModule&gt; _directXRenderingModule;
+};
+</code></pre><p>While we will not go over every function of the <code>Plugin</code> class and all the optional module classes, the following sections will present sample plugins that should convey most of the concepts and methods involved in creating your own plugin.</p>
+<h3 id="information-about-recognized-targets">Information about Recognized Targets</h3>
+<p>If the Wikitude SDK is running with active image-, instant- or object recognition, the plugins API will populate the <code>RecognizedTargetsBucket</code> in the <code>update</code> method with the currently recognized targets. The plugin may then use the corresponding target objects to acquire data, most importantly the pose, and use it for further processing.</p>
+<pre><code>class RecognizedTargetsBucket {
+public:
+    virtual ~RecognizedTargetsBucket() = default;
+
+    virtual const std::vector&lt;ImageTarget*&gt;&amp; getImageTargets() const = 0;
+    virtual const std::vector&lt;ObjectTarget*&gt;&amp; getObjectTargets() const = 0;
+
+    virtual const std::vector&lt;InstantTarget*&gt;&amp; getInstantTargets() const = 0;
+    virtual const std::vector&lt;InitializationPose*&gt;&amp; getInitializationPoses() const = 0;
+
+    virtual const std::vector&lt;Plane*&gt;&amp; getPlanes() const = 0;
+    virtual const Matrix4&amp; getViewMatrix() const = 0;
+};
+</code></pre><p><a id="platformspecifics"></a></p>
+<h3 id="platform-specifics">Platform Specifics</h3>
+<p>To be able to use a C++ Wikitude plugin on Android, it is necessary to create a binary from the C++ code for each supported CPU architecture. To make this process as easy as possible we prepared a CMake file.</p>
+<p>Please note that if you would like to use multiple C++ plugins in your app, you will need to package all plugins in one shared library. This is necessary because we use JNI to register C++ plugins with the Wikitude SDK and the symbol to do that has to be unique.</p>
+<h3 id="android-c-wikitude-plugin-library-build">Android C++ Wikitude Plugin Library Build</h3>
+<p>The following CMake file shows how plugins can be added and built. The class used as Plugin has to derive from <code>wikitude::sdk::Plugin</code>.
+Note that the <code>libnativesdk.so</code> library is not shipped with the SDK package directly, but needs to be extracted from the .aar file, either manually or automatically.</p>
+<pre><code>cmake_minimum_required(VERSION 3.6)
+
+add_library(lib_nativeSDK SHARED IMPORTED)
+set_target_properties(lib_nativeSDK PROPERTIES IMPORTED_LOCATION ${WIKITUDE_NATIVE_PATH}/${ANDROID_ABI}/libnativesdk.so)
+
+add_library(yourPlugins SHARED
+    src/jniHelper.cpp
+    src/JniRegistration.cpp
+    src/__YOUR_PLUGIN__.cpp
+)
+
+target_include_directories(yourPlugins
+    PRIVATE
+    include/wikitude
+    src
+)
+
+target_link_libraries(yourPlugins
+    lib_nativeSDK
+)
+</code></pre><p>This gradle snippet shows a possible way to enable automatic extraction of the Native SDK shared library from the .aar file. It assumes in the gradle script that this code is added to be able to build and run with the java Native SDK (as explained in <a href="setupguideandroidnative.html"><code>Setup Guide Android Native API</code></a>).</p>
+<pre><code>/* Defines the temporary path for the NativeSDK shared library and Plugins shared library.*/
+def wikitudeTmpPath = &quot;${buildDir}/wikitude&quot;
+
+/* Creates a new configuration to extract the shared library from the NativeSDK for the Plugins to link against. */
+configurations { libraryExtraction }
+
+android {
+    ...
+
+    defaultConfig {
+        ...
+
+        externalNativeBuild {
+            cmake {
+                arguments &quot;-DANDROID_TOOLCHAIN=clang&quot;,
+                        &quot;-DANDROID_STL=c++_shared&quot;,
+                        &quot;-DANDROID_NATIVE_API_LEVEL=19&quot;,
+                        /* Provides the path to the extracted nativesdk.so to CMake */
+                        &quot;-DWIKITUDE_NATIVE_PATH=${wikitudeTmpPath}/jni&quot;,
+                        /* Provides the path to that the built plugins library should be copied to to CMake */
+                        &quot;-DPLUGIN_OUTPUT_PATH=${wikitudeTmpPath}/libs&quot;
+
+                cppFlags &quot;-std=c++14&quot;
+                /* Only build for supported architectures. */
+                abiFilters &#39;armeabi-v7a&#39;, &#39;arm64-v8a&#39;
+            }
+        }
+    }
+
+    ...
+
+    externalNativeBuild {
+        cmake {
+            path &quot;src/main/cpp/CMakeLists.txt&quot;
+        }
+    }
+}
+
+dependencies {
+    ...
+
+    /* Extract the native sdk shared library from the aar. */
+    libraryExtraction project(&#39;:wikitude-native-sdk&#39;)
+}
+
+/* Task to extract the nativesdk shared library from the aar. */
+task extractNativeLibraries() {
+    doFirst {
+        configurations.libraryExtraction.files.each { file -&gt;
+            copy {
+                from zipTree(file)
+                into wikitudeTmpPath
+                include &quot;jni/**/*&quot;
+            }
+        }
+    }
+}
+tasks.whenTaskAdded {
+    task -&gt;
+        if (task.name.contains(&quot;external&quot;) &amp;&amp; !task.name.contains(&quot;Clean&quot;)) {
+            /* The externalNativeBuild depends on the extraction task to be able to link properly. */
+            task.dependsOn(extractNativeLibraries)
+            /* Once the native build is done the plugin library is copied to jniLibs to be available
+             * when the plugins should not be rebuilt.
+             */
+            task.doLast {
+                copy {
+                    from &quot;${wikitudeTmpPath}/libs&quot;
+                    into &#39;src/main/jniLibs&#39;
+                }
+            }
+        }
+}
+</code></pre><p>To connect the C++ Plugin to the SDK the
+<code>Java_com_wikitude_common_plugins_internal_PluginManagerInternal_createNativePlugins</code> function has to be implemented. This function has to have three parameters(<code>JNIEnv*</code>, <code>jobject</code> and <code>jstring</code>) and has to return a <code>jlongArray</code>. The third parameter is the plugin that is being registered in case there are several plugins. The return array contains the pointers to the Plugins that should be registered as <code>jlong</code>.
+This can be seen in the <code>JNIRegistration.cpp</code> file in the example app code.</p>
+<pre><code class="lang-c++">JavaVM* pluginJavaVM;
+
+extern &quot;C&quot; JNIEXPORT jlongArray JNICALL Java_com_wikitude_common_plugins_internal_PluginManagerInternal_createNativePlugins(JNIEnv *env, jobject thisObj, jstring jPluginName) {
+
+    env-&gt;GetJavaVM(&amp;pluginJavaVM);
+
+    int numberOfPlugins = 1;
+
+    jlong cPluginsArray[numberOfPlugins];
+
+    JavaStringResource pluginName(env, jPluginName);
+
+    if (pluginName.str == &quot;face_detection&quot;) {
+        FaceDetectionPluginConnector* connector = new FaceDetectionPluginConnector();
+        cPluginsArray[0] = (jlong) new FaceDetectionPlugin(640, 480, connector);
+    } else if (pluginName.str == &quot;barcode&quot;) {
+        cPluginsArray[0] = (jlong) new BarcodePlugin(640, 480);
+    } else if ( pluginName.str == &quot;customcamera&quot; ) {
+        cPluginsArray[0] = (jlong) new YUVFrameInputPlugin();
+    } else if ( pluginName.str == &quot;simple_input_plugin&quot; ) {
+        cPluginsArray[0] = (jlong) new SimpleInputPlugin();
+    }
+
+    jlongArray jPluginsArray = env-&gt;NewLongArray(numberOfPlugins);
+    if (jPluginsArray != nullptr) {
+        env-&gt;SetLongArrayRegion(jPluginsArray, 0, numberOfPlugins, cPluginsArray);
+    }
+
+    return jPluginsArray;
+}
+</code></pre>
+<p><a id="registerplugin"></a></p>
+<h3 id="registering-plugins">Registering Plugins</h3>
+<h4 id="register-c-plugin">Register C++ Plugin</h4>
+<p>To register a C++ plugin with the Wikitude Native SDK, get the <code>PluginManager</code> from the <code>WikitudeSDK</code> instance and call <code>registerNativePlugin</code> passing the name of your library. Do not add <code>lib</code> in front of the name or add the <code>.so</code> extension. If you register your Plugin in the <code>onCreate</code> method of your activity, please also make sure to call the <code>onCreate</code> method of the <code>WikitudeSDK</code> first. The following snippet comes from the <code>BarcodePluginActivity</code> of the Wikitude Native SDK Example application.</p>
+<pre><code class="lang-java">@Override
+protected void onCreate(Bundle savedInstanceState) {
+    ...
+    wikitudeSDK.onCreate(getApplicationContext(), this, startupConfiguration);
+    ...
+    wikitudeSDK.getPluginManager().registerNativePlugins(&quot;wikitudePlugins&quot;, &quot;barcode&quot;, new ErrorCallback() {
+        @Override
+        public void onError(@NonNull WikitudeError error) {
+            Toast.makeText(BarcodePluginActivity.this, &quot;Could not load plugin. Reason: &quot; + error.getMessage(), Toast.LENGTH_LONG).show();
+            Log.v(TAG, &quot;Plugin failed to load. Reason: &quot; + error.getMessage());
+        }
+    });
+}
+</code></pre>
+<p><a id="barcode"></a></p>
+<h3 id="barcode-and-qr-code-reader">Barcode and QR code reader</h3>
+<p>This samples shows a full implementation of the popular barcode library ZBar into the Wikitude SDK. As ZBar is licensed under LGPL2.1 this sample can also be used for other projects.</p>
+<p>ZBar is an open source software suite for reading bar codes from various sources, such as video streams, image files and raw intensity sensors. It supports many popular symbologies (types of bar codes) including EAN-13/UPC-A, UPC-E, EAN-8, Code 128, Code 39, Interleaved 2 of 5 and QR Code.</p>
+<p>In the <code>BarcodePluginActivity.onCreate</code> method we register the bar code C++ plugin by getting the <code>PluginManager</code> from the Wikitude SDK and calling <code>registerNativePlugins</code> passing the name of the native library containing our C++ plugin. Right after that we call initNative(), which we declared as a native method and implement in the C++ plugin, to initialize the JavaVM pointer hold by the native plugin. We also implement the method <code>onBarcodeDetected</code> to display the contents of the scanned bar code. We&#39;ll later call this method from the bar code plugin.</p>
+<pre><code class="lang-java">public class BarcodePluginActivity extends Activity implements ImageTrackerListener, ExternalRendering {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        [...]
+
+        wikitudeSDK.getPluginManager().registerNativePlugins(&quot;wikitudePlugins&quot;, &quot;barcode&quot;, new ErrorCallback() {
+            @Override
+            public void onError(@NonNull WikitudeError error) {
+                Toast.makeText(BarcodePluginActivity.this, &quot;Could not load plugin. Reason: &quot; + error.getMessage(), Toast.LENGTH_LONG).show();
+                Log.v(TAG, &quot;Plugin failed to load. Reason: &quot; + error.getMessage());
+            }
+        });
+
+        initNative();
+    }
+
+    ...
+
+    public void onBarcodeDetected(final String codeContent) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                dropDownAlert.removeAllImages();
+                dropDownAlert.setTextWeight(1);
+                dropDownAlert.setText(&quot;Scan result: &quot; + codeContent);
+                dropDownAlert.show();
+            }
+        });
+    }
+
+    private native void initNative();
+}
+</code></pre>
+<p>Now let&#39;s move to the plugins C++ code. First we&#39;ll have a look at the <code>BarcodePlugin.h</code> file. To create the bar code plugin we derive our <code>BarcodePlugin</code> class from <code>wikitude::sdk::Plugin</code> and override <code>initialize</code>, <code>destroy</code>, <code>cameraFrameAvailable</code> and <code>update</code>. We also declare the following member variables: <code>_worldNeedsUpdate</code>, <code>_image</code>, <code>_imageScanner</code> and <code>_methodId</code>. The <code>_worldNeedsUpdate</code> variable will later be used as an indicator if we need to update the <code>View</code>, <code>_image</code> and <code>_imageScanner</code> are classes from <code>zBar</code> which we&#39;ll use to scan for bar codes and <code>_methodId</code> will hold the method id of the <code>onBarcodeDetected</code> Java method.</p>
+<pre><code class="lang-c++">extern JavaVM* pluginJavaVM;
+
+class BarcodePlugin : public wikitude::sdk::Plugin {
+public:
+    BarcodePlugin(unsigned int cameraFrameWidth, unsigned int cameraFrameHeight);
+    virtual ~BarcodePlugin();
+
+    void initialize(const std::string&amp; temporaryDirectory_, wikitude::sdk::PluginParameterCollection&amp; pluginParameterCollection_) override;
+    void destroy() override;
+
+    void cameraFrameAvailable(wikitude::common_code::ManagedCameraFrame&amp; managedCameraFrame_) override;
+    void update(const wikitude::sdk::RecognizedTargetsBucket&amp; recognizedTargetsBucket_) override;
+
+protected:
+    int _worldNeedsUpdate;
+
+    zbar::Image         _image;
+    zbar::ImageScanner  _imageScanner;
+
+private:
+    jmethodID   _methodId;
+    bool        _jniInitialized;
+};
+</code></pre>
+<p>We declare two variables in the global namespace one which will hold a pointer to the JavaVM and one which will hold a reference to our activity. To initialize those two variables we declared the <code>initNative</code> native method in the <code>BarcodeActivity</code> and implement it like in the following code snippet. All we do is get the pointer to the <code>JavaVM</code> from the <code>JNIEnv</code> and create a new global reference to the calling activity instance.</p>
+<pre><code class="lang-c++">jobject barcodeActivityObj;
+
+extern &quot;C&quot; JNIEXPORT void JNICALL
+Java_com_wikitude_samples_plugins_BarcodePluginActivity_initNative(JNIEnv* env, jobject obj) {
+    env-&gt;GetJavaVM(&amp;pluginJavaVM);
+    barcodeActivityObj = env-&gt;NewGlobalRef(obj);
+}
+</code></pre>
+<p>In the constructor we set <code>_worldNeedsUpdate</code> to zero indicating that there is no update necessary and initialize the <code>zBar::Image</code> member variable passing its constructor the width and height of the camera frame, the image format of <code>Y800</code>, set its data pointer to null and the data length to zero. We use the JavaVM to create an instance of <code>JavaVMResource</code> which is a helper class to manage the JavaVM, we provided in the file <code>jniHelper.cpp</code>. Next we get the Java environment from the <code>JavaVMResource</code> and initialize the <code>_methodId</code> member. In the destructor we delete the global reference to the activity object.</p>
+<pre><code class="lang-c++">BarcodePlugin::BarcodePlugin(unsigned int cameraFrameWidth, unsigned int cameraFrameHeight) :
+        Plugin(&quot;com.wikitude.android.barcodePlugin&quot;),
+        _worldNeedsUpdate(0),
+        _image(cameraFrameWidth, cameraFrameHeight, &quot;Y800&quot;, nullptr, 0),
+        _jniInitialized(false) {
+}
+
+BarcodePlugin::~BarcodePlugin() {
+    JavaVMResource vm(pluginJavaVM);
+    vm.env-&gt;DeleteGlobalRef(barcodeActivityObj);
+}
+</code></pre>
+<p>In the <code>initialize</code> method we configure the <code>zbar::ImageScanner</code> by calling <code>setConfig</code>, enabling all supported bar codes. If you are only interested in one or some particular types of codes, first disabling all bar code types and manually enabling each particular type would be the better idea. That way performance could be greatly improved.</p>
+<pre><code class="lang-c++">void BarcodePlugin::initialize(const std::string&amp; temporaryDirectory_, wikitude::sdk::PluginParameterCollection&amp; pluginParameterCollection_) {
+    _imageScanner.set_config(zbar::ZBAR_NONE, zbar::ZBAR_CFG_ENABLE, 1);
+}
+</code></pre>
+<p>We react to the <code>destroy</code> event by setting the current data pointer of the <code>zbar::Image</code> member to null and length to zero.</p>
+<pre><code class="lang-c++">void BarcodePlugin::destroy() {
+    _image.set_data(nullptr, 0);
+}
+</code></pre>
+<p>The last but most interesting method is <code>cameraFrameAvailable</code>. In the <code>cameraFrameAvailable</code> method we set the data of our previously initialized <code>zbar::Image</code> member variable to the frame data we just received and the length of the data to frame width * frame height by calling <code>set_data</code>. We then start the scanning process by calling the <code>scan</code> method of our <code>zBar::ImageScanner</code> passing the <code>zBar::Image</code> member instance. The <code>zBar::ImageScanner::scan</code> method returns the number of detected bar codes in the image frame, we save this number in a local variable <code>n</code>. If <code>n</code> is not equal to the result of the last frame, which we saved to <code>_worldNeedsUpdate</code> member variable, we know there was a new bar code detected (meaning there was no bar code in the last frame) or that there was a bar code in the last frame and now there isn&#39;t. When that&#39;s the case, we do another check if there really was a bar code detected this frame and if there was we call the <code>onBarcodeDetected</code> Java method passing the code content.</p>
+<pre><code class="lang-c++">void BarcodePlugin::cameraFrameAvailable(wikitude::common_code::ManagedCameraFrame&amp; cameraFrame_) {
+    if (!_jniInitialized) {
+        JavaVMResource vm(pluginJavaVM);
+        jclass clazz = vm.env-&gt;FindClass(&quot;com/wikitude/samples/plugins/BarcodePluginActivity&quot;);
+        _methodId = vm.env-&gt;GetMethodID(clazz, &quot;onBarcodeDetected&quot;, &quot;(Ljava/lang/String;)V&quot;);
+        _jniInitialized = true;
+    }
+
+    const wikitude::sdk::CameraFramePlane&amp; luminancePlane = cameraFrame_.get()[0];
+    const wikitude::sdk::Size&lt;int&gt;&amp; size = cameraFrame_.getColorMetadata().getPixelSize();
+
+    int n;
+    if (luminancePlane.getRowStride() == size.width) {
+        _image.set_data(luminancePlane.getData(), luminancePlane.getDataSize());
+        n = _imageScanner.scan(_image);
+    } else {
+        unsigned int luminanceSize = static_cast&lt;unsigned int&gt;(size.width * size.height);
+        unsigned char luminanceData[luminanceSize];
+        for (int row = 0; row &lt; size.height; ++row) {
+            std::memcpy(luminanceData + row * size.width, static_cast&lt;const unsigned char*&gt;(luminancePlane.getData()) + row * luminancePlane.getRowStride(), static_cast&lt;size_t&gt;(size.width));
+        }
+        _image.set_data(luminanceData, luminanceSize);
+        n = _imageScanner.scan(_image);
+    }
+
+    if (n != _worldNeedsUpdate) {
+        if (n) {
+            JavaVMResource vm(pluginJavaVM);
+            zbar::Image::SymbolIterator symbol = _image.symbol_begin();
+            jstring codeContent = vm.env-&gt;NewStringUTF(symbol-&gt;get_data().c_str());
+            vm.env-&gt;CallVoidMethod(barcodeActivityObj, _methodId, codeContent);
+
+        }
+    }
+
+    _worldNeedsUpdate = n;
+}
+</code></pre>
+<p><a id="facedetection"></a></p>
+<h3 id="face-detection">Face Detection</h3>
+<p>This samples shows how to add face detection to your Wikitude augmented reality experience using OpenCV.</p>
+<p>The Face Detection Plugin Example consists of the C++ classes <code>FaceDetectionPlugin</code>, <code>FaceDetectionPluginConnector</code> and the Java class <code>FaceDetectionPluginActivity</code>. We will use OpenCV to detect faces in the current camera frame and OpenGL calls in Java to render a frame around detected faces.</p>
+<p>The <code>FaceDetectionPluginConnector</code> acts as our interface between native code and Java and contains some JNI code, since JNI is not the focus of this example we won&#39;t go into detail about the implementation. If you would like to have a look at the complete code feel free to browse the source code in the Wikitude SDK release package.</p>
+<p>We implement to Java native method <code>initNative</code>; it will be used to initialize the plugin with the path to an OpenCV database, The other methods <code>faceDetected</code>, <code>faceLost</code>, and <code>projectionMatrixChanged</code> will be called by the Plugin to update the Java Android Activity, which controls the rendering.</p>
+<pre><code class="lang-c++">extern &quot;C&quot; JNIEXPORT void JNICALL
+Java_com_wikitude_samples_plugins_FaceDetectionPluginActivity_initNative(JNIEnv* env, jobject obj, jstring databasePath_) {
+    env-&gt;GetJavaVM(&amp;pluginJavaVM);
+    faceDetectionActivityObj = env-&gt;NewGlobalRef(obj);
+    FaceDetectionPlugin::_databasePath = env-&gt;GetStringUTFChars(databasePath_, NULL);
+}
+
+void FaceDetectionPluginConnector::faceDetected(const float* modelViewMatrix) {
+    JavaVMResource vm(pluginJavaVM);
+    jclass clazz = vm.env-&gt;FindClass(&quot;com/wikitude/samples/plugins/FaceDetectionPluginActivity&quot;);
+    _faceDetectedId = vm.env-&gt;GetMethodID(clazz, &quot;onFaceDetected&quot;, &quot;([F)V&quot;);
+    jfloatArray jModelViewMatrix = vm.env-&gt;NewFloatArray(16);
+    vm.env-&gt;SetFloatArrayRegion(jModelViewMatrix, 0, 16, modelViewMatrix);
+    vm.env-&gt;CallVoidMethod(faceDetectionActivityObj, _faceDetectedId, jModelViewMatrix);
+}
+
+void FaceDetectionPluginConnector::faceLost() {
+    JavaVMResource vm(pluginJavaVM);
+    jclass clazz = vm.env-&gt;FindClass(&quot;com/wikitude/samples/plugins/FaceDetectionPluginActivity&quot;);
+    _faceLostId = vm.env-&gt;GetMethodID(clazz, &quot;onFaceLost&quot;, &quot;()V&quot;);
+    vm.env-&gt;CallVoidMethod(faceDetectionActivityObj, _faceLostId);
+}
+
+void FaceDetectionPluginConnector::projectionMatrixChanged(const float* projectionMatrix) {
+    if (faceDetectionActivityObj) {
+        JavaVMResource vm(pluginJavaVM);
+        jclass clazz = vm.env-&gt;FindClass(&quot;com/wikitude/samples/plugins/FaceDetectionPluginActivity&quot;);
+        _projectionMatrixChangedId = vm.env-&gt;GetMethodID(clazz, &quot;onProjectionMatrixChanged&quot;, &quot;([F)V&quot;);
+        jfloatArray jProjectionMatrix = vm.env-&gt;NewFloatArray(16);
+        vm.env-&gt;SetFloatArrayRegion(jProjectionMatrix, 0, 16, projectionMatrix);
+        vm.env-&gt;CallVoidMethod(faceDetectionActivityObj, _projectionMatrixChangedId, jProjectionMatrix);
+    }
+}
+</code></pre>
+<p>Next we have a look at the <code>FaceDetectionPlugin</code> class. Again we will leave out implementation details and focus on how we use the plugin itself. In the <code>cameraFrameAvailable</code> method we use OpenCV to detect faces in the current camera frame which the Wikitude SDK passes to the plugin. We call the observer which is an instance of the <code>FaceDetectionPluginConnector</code> to notify the Java activity about the result.</p>
+<pre><code class="lang-c++">void FaceDetectionPlugin::cameraFrameAvailable(wikitude::sdk::ManagedCameraFrame&amp; cameraFrame_) {
+    if (!_isDatabaseLoaded) {
+        _isDatabaseLoaded = _cascadeDetector.load(_databasePath);
+        if (!_isDatabaseLoaded) {
+            return;
+        }
+    }
+
+    wikitude::sdk::Size&lt;int&gt; frameSize = cameraFrame_.getColorMetadata().getPixelSize();
+    const wikitude::sdk::CameraFramePlane&amp; luminancePlane = cameraFrame_.get()[0];
+
+    if (_grayFrame.rows != frameSize.height || _grayFrame.cols != luminancePlane.getRowStride()) {
+        /*
+         * The luminance data may contain row strides on android. This means that there can be a distance
+         * between rows in memory. The row stride is the distance between the start of two consecutive rows
+         * in bytes. When the row stride equals the frame width the data is continuous.
+         *
+         * OpenCV has a &quot;step&quot; parameter for the matrix creation which is the row stride in our case.
+         * Without this OpenCV could not detect faces since it would expect continuous data which would
+         * make the image unusable.
+         */
+        _grayFrame = cv::Mat(frameSize.height, luminancePlane.getRowStride(), CV_8UC1, const_cast&lt;void *&gt;(luminancePlane.getData()), luminancePlane.getRowStride());
+    } else {
+        std::memcpy(_grayFrame.data, luminancePlane.getData(), luminancePlane.getDataSize());
+    }
+
+    cv::Mat smallImg = cv::Mat(frameSize.height * 0.5f, luminancePlane.getRowStride() * 0.5f, CV_8UC1, luminancePlane.getRowStride() * 0.5f);
+
+    cv::resize(_grayFrame, smallImg, smallImg.size(), CV_INTER_AREA);
+
+    /* Depending on the device orientation, the camera frame needs to be rotated in order to detect faces in it */
+
+    float currentCameraToSurfaceAngle;
+    { // auto release scope
+        std::unique_lock&lt;std::mutex&gt; l(_cameraToSurfaceAngleMutex);
+
+        currentCameraToSurfaceAngle = _cameraToSurfaceAngle;
+    }
+    if (currentCameraToSurfaceAngle == 90) {
+        cv::transpose(smallImg, smallImg);
+        cv::flip(smallImg, smallImg, 1);
+    } else if (currentCameraToSurfaceAngle == 180) {
+        cv::flip(smallImg, smallImg, 0);
+    } else if (currentCameraToSurfaceAngle == 270) {
+        cv::transpose(smallImg, smallImg);
+        cv::flip(smallImg, smallImg, -1);
+    } else if (currentCameraToSurfaceAngle == 0) {
+        // nop for landscape right
+    }
+
+    cv::Rect crop = cv::Rect(smallImg.cols / 4, smallImg.rows / 4, smallImg.cols / 2, smallImg.rows / 2);
+
+    cv::Mat croppedImg = smallImg(crop);
+
+
+    _result.clear();
+    _cascadeDetector.detectMultiScale(croppedImg, _result, 1.1, 2, 0, cv::Size(20, 20));
+
+    if (_result.size()) {
+        convertFaceRectToModelViewMatrix(croppedImg, _result.at(0), currentCameraToSurfaceAngle);
+        _observer-&gt;faceDetected(_modelViewMatrix);
+    } else {
+        _observer-&gt;faceLost();
+    }
+}
+</code></pre>
+<p>In the <code>FaceDetectionPluginActivity</code> we override <code>onCreate</code> and initialize the Plugin by calling the initNative native method, passing the path to the database file. To render a frame around detected faces we created an instance of <code>GLRendererFaceDetectionPlugin</code> class which takes care of rendering a rectangle around faces and all targets of the also active <code>ImageTracker</code>. When the plugin detects, looses or recalculated the projection matrix it will call the appropriate Java methods which we use to update the <code>Renderer</code> instance.</p>
+<pre><code class="lang-java">    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        [...]
+
+        wikitudeSDK.getPluginManager().registerNativePlugins(&quot;wikitudePlugins&quot;, &quot;face_detection&quot;, new ErrorCallback() {
+            @Override
+            public void onError(WikitudeError error) {
+                Log.v(TAG, &quot;Plugin failed to load. Reason: &quot; + error.getMessage());
+            }
+        });
+
+        try {
+            // load cascade file from application resources
+            InputStream is = getResources().openRawResource(R.raw.high_database);
+            File cascadeDir = getDir(&quot;cascade&quot;, Context.MODE_PRIVATE);
+            final File cascadeFile = new File(cascadeDir, &quot;lbpcascade_frontalface.xml&quot;);
+            FileOutputStream os = new FileOutputStream(cascadeFile);
+
+            byte[] buffer = new byte[4096];
+            int bytesRead;
+            while ((bytesRead = is.read(buffer)) != -1) {
+                os.write(buffer, 0, bytesRead);
+            }
+            is.close();
+            os.close();
+
+            initNative(cascadeFile.getAbsolutePath());
+
+            cascadeDir.delete();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.e(TAG, &quot;Failed to load cascade. Exception thrown: &quot; + e);
+        }
+
+        [...]
+    }
+
+    [...]
+
+    public void onFaceDetected(float[] modelViewMatrix) {
+        faceTarget.setViewMatrix(modelViewMatrix);
+        glRenderer.setCurrentlyRecognizedFace(faceTarget);
+        [...]
+    }
+
+    public void onFaceLost() {
+        glRenderer.setCurrentlyRecognizedFace(null);
+    }
+
+    public void onProjectionMatrixChanged(float[] projectionMatrix) {
+        faceTarget.setProjectionMatrix(projectionMatrix);
+        glRenderer.setCurrentlyRecognizedFace(faceTarget);
+    }
+
+    private native void initNative(String cascadeFilePath);
+}
+</code></pre>
+<p>If you are interested in the implementation details of the <code>FaceDetectionPluginActivity</code> or the <code>StrokedRectangle</code> class, you can find both classes in our Wikitude SDK Example Application.</p>
+
+                <footer id="footer">
+                    &copy; 2012-2019 <a href="https://www.wikitude.com">Wikitude GmbH</a> · <a href="https://www.wikitude.com/imprint">Imprint</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            var storageKey = "androidnative" + "9.6.0";
+            function stateChanged(nodes, nodesJson) {
+                localStorage.setItem(storageKey, JSON.stringify(nodesJson));
+            }
+
+            function getData() {
+                var data = localStorage.getItem(storageKey);
+                if (data) return JSON.parse(data);
+            }
+
+            var easytree = $("#toc").easytree({
+                data: getData(),
+                stateChanged: stateChanged
+            });
+
+            $('.easytree-exp-e .easytree-title').each(function () {
+                let openItem = $(this).parent();
+                var openItemId = openItem.attr('id');
+                var activeChildItem = openItem.parent().find('ul li .easytree-active');
+
+                if (!activeChildItem.length) {
+                    easytree.toggleNode(openItemId);
+                }
+            });
+
+            var activeItem = $('.easytree-active.easytree-exp-c .easytree-title');
+
+            if (activeItem) {
+                var activeItemId = activeItem.closest('.easytree-active').attr('id');
+                easytree.toggleNode(activeItemId);
+            }
+            
+        });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // Every image referenced from a Markdown document
+        $("#content img").each(function() {
+            // Let's put a caption if there is one
+            if($(this).attr("alt"))
+                $(this).wrap('<figure class="image"></figure>')
+                    .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
+            });
+
+        //
+        document.getElementById("documentationSelect").onchange = function() {
+            var selectedOption = this.value;
+            var targetLink ="";
+            //console.log(selectedOption);
+            if(selectedOption !== ""){
+                if (selectedOption.startsWith("external"))
+                {
+                    targetLink = selectedOption.substring(9);
+                }
+                else
+                {
+                    targetLink = "https://www.wikitude.com/external/doc/documentation/latest/" + selectedOption;
+                }
+                
+                window.top.location.href = targetLink; 
+            }
+        };
+    });
+    </script>
+
+</body>
+    <script>
+    var lightbox = new Lightbox();
+    lightbox.load();
+    hljs.initHighlightingOnLoad();
+  </script>
+     <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNSZJ73"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</html>
